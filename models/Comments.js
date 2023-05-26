@@ -15,7 +15,7 @@ Comments.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    comments: {
+    text: {
       type: DataTypes.STRING,
     },
     date_created: {
@@ -30,8 +30,14 @@ Comments.init(
         key: 'id',
       },
     },
+    story_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'story',
+        key: 'id',
+      },
   },
-  {
+  
     sequelize,
     timestamps: false,
     freezeTableName: true,

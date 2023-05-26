@@ -18,12 +18,10 @@
         placeholder="Write your comment here"
       ></textarea>
       <br>
-      <button type="submit">Comment</button>
+      <button type="submit" id="comment-submit">Comment</button>
     </form>
   </div>
   <div>
-    {{#each Comments}}
-      <p>{{this}}</p>
-    {{/each}}
+    <span>{{comments.name}}: {{comments}}</span>
   </div>
 </div>
