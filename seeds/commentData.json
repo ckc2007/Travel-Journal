@@ -1,16 +1,16 @@
 [
     {
-      "name": "Sal",
+      "user_id": "Sal",
       "comments": "This post is awesome. I'm from the future.",
       "date_created": "May 23, 2123"
     },
     {
-      "name": "Lernantino",
+      "user_id": "Lernantino",
       "comments": "That is something else.",
       "date_created": "July 4, 2023"
     },
     {
-      "name": "Amiko",
+      "user_id": "Amiko",
       "comments": "Interesting...",
       "date_created": "August 18, 2023"
     }

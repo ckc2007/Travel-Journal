@@ -73,7 +73,11 @@ const seedDatabase = async () => {
         user_id: randomUser.id,
         story_id: randomStory.id,
       };
-    })
+    }),
+    {
+      individualHooks: true,
+      returning: true,
+    }
   );
 
   process.exit(0);
