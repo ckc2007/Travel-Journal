@@ -4,14 +4,14 @@ const newCommentHandler = async (event) => {
   const name = document.querySelector('#name').value.trim();
   const text = document.querySelector('#comment-text').value.trim();
 
-  if (commentText) {
+  if (text) {
     try {
       const response = await fetch(`/api/stories/${storyId}/comments`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name, text }),
+        body: JSON.stringify({ name, comments: text }),
       });
 
       if (response.ok) {
