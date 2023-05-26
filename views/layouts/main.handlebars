@@ -10,16 +10,20 @@
 </head>
 
 <body>
+  <h1 class="title flex-column justify-space-around display-flex justify-space-between align-center p-2">
+    <span>Journal to your Travels</span>
+  </h1>
+  <br>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <span role="img" aria-label="money">💸</span>
-        <a href="/">Activity Cost</a>
-      </h1>
+      <nav>
+        <a href="/">home</a><span> | </span>
+        <a href="/">storyboard</a><span> | </span>
+        <a href="/profile">portfolio</a><span> | </span>
+      </nav>
       <nav>
         <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
-        <a href="/profile">profile</a> |
+        {{#if logged_in}}|
         <button class="no-button" id="logout">logout</button>
         {{else}}
         <a href="/login">login</a>

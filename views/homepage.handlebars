@@ -3,15 +3,13 @@
 <div class="row mb-4 project">
   <div class="col-md-5">
     <h2>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      {{{get_emoji}}}
+      <!-- Call helper function with triple brackets to render {{{emoji}}}-->
       <a href="/stories/{{story.id}}">{{story.name}}</a>
     </h2>
     <p>
-      <span for="img" aria-label="money">💲</span>
+      <span for="img" aria-label="money">Budget: $ </span>
       <!-- Pass needed_funding value to the helper function -->
       <span class="dollar-amount">{{format_amount story.needed_funding}}</span>
-      needed!
     </p>
     <p>Created by {{story.user.name}} on {{format_date story.date_created}}</p>
   </div>
