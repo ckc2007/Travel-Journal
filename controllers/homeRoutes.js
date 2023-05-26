@@ -39,6 +39,7 @@ router.get('/stories/:id', async (req, res) => {
     });
 
     const story = storyData.get({ plain: true });
+    
 
     res.render('story', {
       ...story,
