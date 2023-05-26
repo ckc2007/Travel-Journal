@@ -8,7 +8,22 @@
     <span class="dollar-amount">{{format_amount needed_funding}}</span>
     needed
   </p>
-  <p>
-    <button class="btn btn-primary comment"></button>
-  </p>
+
+  <div id="comment-section">
+    <h3>Comments</h3>
+    <div id="comments-container"></div>
+    <form id="comment-form">
+      <textarea
+        id="comment-textarea"
+        placeholder="Write your comment here"
+      ></textarea>
+      <br>
+      <button type="submit">Comment</button>
+    </form>
+  </div>
+  <div>
+    {{#each Comments}}
+      <p>{{this}}</p>
+    {{/each}}
+  </div>
 </div>

@@ -16,7 +16,7 @@ Stories.hasMany(Comments, {
   onDelete: 'CASCADE'
 });
 
-Comment.belongsTo(Story, {
+Comments.belongsTo(Stories, {
   foreignKey: 'story_id'
 });
 

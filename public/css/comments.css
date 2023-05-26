@@ -1,0 +1,25 @@
+#comment-section {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* #comments-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  } */
+  
+  #comment-form {
+    margin-top: 10px;
+  }
+  
+  #comment-textarea {
+    width: 70%;
+    height: 45px;
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    margin-top: 5px;
+  }
+  
