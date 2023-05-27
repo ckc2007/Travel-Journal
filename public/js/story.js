@@ -5,12 +5,12 @@ const newCommentHandler = async (event) => {
 
   if (text) {
     try {
-      const response = await fetch(`/api/comments/`, {
+      const response = await fetch(`/api/comments`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ comments: text }),
+        body: JSON.stringify({ story_id: storyId, comments: text }),
       });
 
       if (response.ok) {
@@ -28,16 +28,6 @@ const newCommentHandler = async (event) => {
   }
 };
 
-const testing = (event) => {
-  event.preventDefault();
-
-  if (event) {
-    console.log('It is finally working!')
-} else {
-  console.error(error)
-  }
-};
-
 document
   .querySelector('#comment-submit')
-  .addEventListener('submit', testing);
+  .addEventListener('click', newCommentHandler);

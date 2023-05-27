@@ -1,18 +1,12 @@
 [
     {
-      "name": "Sal",
-      "comments": "This post is awesome. I'm from the future.",
-      "date_created": "May 23, 2123"
+      "comments": "This post is awesome. I'm from the future."
     },
     {
-      "name": "Lernantino",
-      "comments": "That is something else.",
-      "date_created": "July 4, 2023"
+      "comments": "That is something else."
     },
     {
-      "name": "Amiko",
-      "comments": "Interesting...",
-      "date_created": "August 18, 2023"
+      "comments": "Interesting..."
     }
 ]
   
