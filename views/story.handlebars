@@ -8,20 +8,22 @@
     <span class="dollar-amount">{{format_amount needed_funding}}</span>
     needed
   </p>
-
-  <div id="comment-section">
-    <h3>Comments</h3>
-    <div id="comments-container"></div>
-    <form id="comment-form">
-      <textarea
-        id="comment-textarea"
-        placeholder="Write your comment here"
-      ></textarea>
-      <br>
-      <button type="submit" id="comment-submit">Comment</button>
-    </form>
-  </div>
-  <div>
-    <span>{{comments.name}}: {{comments}}</span>
-  </div>
 </div>
+
+<div id="comment-section">
+  <h3>Comments</h3>
+  <div id="comments-container">
+    {{#each comments}}
+    <div>{{this.id}}"
+      {{this.name}} of {{this.comments}}
+    </div>
+    {{/each}}
+  </div>
+  <form id="comment-form">
+    <textarea id="comment-textarea" placeholder="Write your comment here"></textarea>
+    <br>
+    <button type="submit" id="comment-submit">Comment</button>
+  </form>
+</div>
+
+<script src="/js/story.js"></script>

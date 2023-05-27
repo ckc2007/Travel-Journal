@@ -1,17 +1,16 @@
 const newCommentHandler = async (event) => {
   event.preventDefault();
 
-  const name = document.querySelector('#name').value.trim();
-  const text = document.querySelector('#comment-text').value.trim();
+  const text = document.querySelector('#comment-textarea').value.trim();
 
   if (text) {
     try {
-      const response = await fetch(`/api/stories/${storyId}/comments`, {
+      const response = await fetch(`/api/comments/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name, comments: text }),
+        body: JSON.stringify({ comments: text }),
       });
 
       if (response.ok) {
@@ -29,4 +28,16 @@ const newCommentHandler = async (event) => {
   }
 };
 
-document.querySelector('.comment-submit').addEventListener('click', newCommentHandler);
+const testing = (event) => {
+  event.preventDefault();
+
+  if (event) {
+    console.log('It is finally working!')
+} else {
+  console.error(error)
+  }
+};
+
+document
+  .querySelector('#comment-submit')
+  .addEventListener('submit', testing);
