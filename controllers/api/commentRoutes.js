@@ -2,11 +2,9 @@
 // const { Comments } = require('../../models');
 // const withAuth = require('../../utils/auth');
 
-// router.post('/', async (req, res) => {
+// router.post('/', withAuth, async (req, res) => {
 //   try {
-//     const { story_id, comments } = req.body;
-
-//     // Retrieve the authenticated user ID
+//     const { comments, story_id } = req.body;
 //     const userId = req.session.user_id;
 
 //     const commentData = await Comments.create({
@@ -15,6 +13,7 @@
 //       story_id,
 //     });
 
+//     console.log(commentData);
 //     res.status(200).json(commentData);
 //   } catch (err) {
 //     res.status(400).json(err);
@@ -38,8 +37,14 @@ router.post('/', withAuth, async (req, res) => {
       user_id: userId,
       story_id,
     });
+    
+    const commentsData = await Comments.findAll({
+      where: { story_id },
+      // Include any additional attributes you want to retrieve from the database
+    });
 
-    res.status(200).json(commentData);
+    console.log(commentData);
+    res.render('your-handlebars-template', { comments: commentsData });
   } catch (err) {
     res.status(400).json(err);
   }
