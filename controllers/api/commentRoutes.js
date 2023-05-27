@@ -40,11 +40,11 @@ router.post('/', withAuth, async (req, res) => {
     
     const commentsData = await Comments.findAll({
       where: { story_id },
-      // Include any additional attributes you want to retrieve from the database
+      // Include any additional attributes to retrieve from the database
     });
 
     console.log(commentData);
-    res.render('your-handlebars-template', { comments: commentsData });
+    res.render('story', { comments: commentsData });
   } catch (err) {
     res.status(400).json(err);
   }
