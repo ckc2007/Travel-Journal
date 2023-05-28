@@ -23,14 +23,14 @@ Comments.init(
     user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'User',
+        model: 'user',
         key: 'id',
       },
     },
     story_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'Stories',
+        model: 'stories',
         key: 'id',
       },
     },
