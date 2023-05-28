@@ -3,6 +3,8 @@ const newCommentHandler = async (event) => {
   
   const text = document.querySelector('#comment-textarea').value.trim();
   const storyId = window.location.pathname.split('/').pop();
+  console.log('Comment Text:', text);
+  console.log('Story ID:', storyId);
   
   if (text && storyId) {
     try {
@@ -16,15 +18,14 @@ const newCommentHandler = async (event) => {
   
       if (response.ok) {
         const commentData = await response.json();
-        // Handle the successful creation of the comment
+        // Successful creation of the comment
         console.log('Comment created:', commentData);
-        // Perform any additional UI updates if needed
+
       } else {
-        // Handle the error case
         console.error('Failed to create comment:', response.status);
       }
     } catch (error) {
-      // Handle any network or other errors
+      // Network or other errors
       console.error('Error creating comment:', error);
     }
   }

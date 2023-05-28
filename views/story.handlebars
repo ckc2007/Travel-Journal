@@ -12,10 +12,11 @@
 
 <div id="comment-section">
   <h3>Comments</h3>
+  <br>
   <div id="comments-container">
     {{#each comments}}
     <div>
-      {{this}}
+      <p>{{this.User.name}}: {{this.comments}}</p>
     </div>
     {{/each}}
   </div>

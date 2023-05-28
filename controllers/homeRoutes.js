@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Stories, User } = require('../models');
+const { Stories, User, Comments } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -27,6 +27,7 @@ router.get('/', async (req, res) => {
   }
 });
 
+//GET request to display story and associated comments
 router.get('/stories/:id', async (req, res) => {
   try {
     const storyData = await Stories.findByPk(req.params.id, {
@@ -39,11 +40,19 @@ router.get('/stories/:id', async (req, res) => {
     });
 
     const story = storyData.get({ plain: true });
-    
+
+    const commentsData = await Comments.findAll({
+      where: {
+        story_id: req.params.id, // Filter comments by the specific story ID
+      },
+    });
+
+    const comments = commentsData.map((comment) => comment.get({ plain: true }));
 
     res.render('story', {
       ...story,
-      logged_in: req.session.logged_in
+      comments,
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);

@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Stories } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+//POST request to create new story
 router.post('/', withAuth, async (req, res) => {
   try {
     const newStory = await Stories.create({
@@ -14,6 +15,7 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
+//DELETE request to delete story from user stories
 router.delete('/:id', withAuth, async (req, res) => {
   try {
     const storyData = await Stories.destroy({
@@ -33,5 +35,6 @@ router.delete('/:id', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 
 module.exports = router;

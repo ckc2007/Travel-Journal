@@ -40,7 +40,7 @@ Stories.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Stories',
+    modelName: 'stories',
   }
 );
 
