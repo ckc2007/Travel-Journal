@@ -1,6 +1,7 @@
 [
     {
-    "name": "Sith Sun",
-    "comments": "Why is it not working?"
+    "user_id": 1,
+    "comments": "Why is it not working?",
+    "story_id": 1
     }
 ]

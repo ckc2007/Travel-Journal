@@ -1,30 +1,32 @@
 <div class="text-center">
   <h2>{{name}}</h2>
-  <p>{{{get_emoji}}}</p>
-  <p>{{description}}</p>
+  {{!-- <p>{{{get_emoji}}}</p> --}}
+  <p>{{blog}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
   <p>
     <span for="img" aria-label="money">$ </span>
-    <span class="dollar-amount">{{format_amount needed_funding}}</span>
+    <span class="dollar-amount">{{format_amount budget}}</span>
     needed
   </p>
 </div>
 
 <div id="comment-section">
-  <h3>Comments</h3>
+  <h3>comments section</h3>
+  <br>
+  <form id="comment-form">
+    <textarea id="comment-textarea" placeholder="Write your comment here"></textarea>
+  <br>
+    <button type="submit" id="comment-submit">Comment</button>
+  </form>
   <br>
   <div id="comments-container">
     {{#each comments}}
     <div>
-      <p>{{this.User.name}}: {{this.comments}}</p>
+      <p>{{this.user.name}}: {{this.comments}}</p>
     </div>
     {{/each}}
   </div>
-  <form id="comment-form">
-    <textarea id="comment-textarea" placeholder="Write your comment here"></textarea>
-    <br>
-    <button type="submit" id="comment-submit">Comment</button>
-  </form>
 </div>
 
+<link rel="stylesheet" href="/css/style.css">
 <script src="/js/story.js"></script>

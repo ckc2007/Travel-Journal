@@ -1,11 +1,11 @@
 const router = require('express').Router();
-const { Stories, User, Comments } = require('../models');
+const { Story, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
-    const storyData = await Stories.findAll({
+    const storyData = await Story.findAll({
       include: [
         {
           model: User,
@@ -30,7 +30,7 @@ router.get('/', async (req, res) => {
 //GET request to display story and associated comments
 router.get('/stories/:id', async (req, res) => {
   try {
-    const storyData = await Stories.findByPk(req.params.id, {
+    const storyData = await Story.findByPk(req.params.id, {
       include: [
         {
           model: User,
@@ -41,9 +41,9 @@ router.get('/stories/:id', async (req, res) => {
 
     const story = storyData.get({ plain: true });
 
-    const commentsData = await Comments.findAll({
+    const commentsData = await Comment.findAll({
       where: {
-        story_id: req.params.id, // Filter comments by the specific story ID
+        story_id: req.params.id, //Filter comments by the specific story ID
       },
     });
 
@@ -65,7 +65,7 @@ router.get('/profile', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Stories }],
+      include: [{ model: Story }],
     });
 
     const user = userData.get({ plain: true });

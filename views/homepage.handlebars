@@ -8,14 +8,14 @@
     </h2>
     <p>
       <span aria-label="money">Budget: $</span>
-      <!-- Pass needed_funding value to the helper function -->
-      <span class="dollar-amount">{{format_amount story.needed_funding}}</span>
+      <!-- Pass budget value to the helper function -->
+      <span class="dollar-amount">{{format_amount story.budget}}</span>
     </p>
     <p>Created by {{story.user.name}} on {{format_date story.date_created}}</p>
   </div>
   <div class="col-md-7">
     <p>
-      {{story.description}}
+      {{story.blog}}
     </p>
   </div>
 </div>
