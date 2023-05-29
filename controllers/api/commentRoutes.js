@@ -15,9 +15,10 @@ router.post('/', withAuth, async (req, res) => {
     });
     
     res.status(200).json({ message: 'Comment created successfully' });
+    return;
   } catch (err) {
     res.status(400).json(err);
-  }
+  };
 });
 
 
