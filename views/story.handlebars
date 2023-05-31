@@ -7,6 +7,16 @@
     <span class="dollar-amount">{{format_amount budget}}</span>
     needed
   </p>
+  {{!-- added image display section --}}
+  {{#if image}}
+  <div class="image-gallery">
+    {{#each image}}
+      <a href="/images/{{this}}" target="_blank">
+        <img src="/images/{{this}}" alt="Story Image" class="gallery-image" />
+      </a>
+    {{/each}}
+  </div>
+{{/if}}
 </div>
 
 <div id="comment-section">
