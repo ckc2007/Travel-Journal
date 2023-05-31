@@ -2,6 +2,16 @@ header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  margin: auto;
+  color: #1b89bc;
+}
+
 .no-button {
   background: none;
   border: none;

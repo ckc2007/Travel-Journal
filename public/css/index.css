@@ -1,0 +1,16 @@
+/* index.css */
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+.hero {
+  background: url("../imgs/beach-bg.jpg") no-repeat;
+  height: 500px;
+  width: 100%;
+}
+
+.floating-sub-hero {
+    bottom: -7%;
+    left: 10%;
+  }

@@ -27,11 +27,11 @@
     </form>
   </div>
 
-  {{#if Stories.length}}
+  {{#if stories.length}}
   <div class="col-md-6 project-list">
     <h3>Storyboard:</h3>
 
-    {{#each Stories as |story|}}
+    {{#each stories as |story|}}
     <div class="row mb-2">
       <div class="col-md-8">
         <h4><a href="/stories/{{story.id}}">{{story.name}}</a></h4>
@@ -45,4 +45,4 @@
   {{/if}}
 </div>
 
-<script src="./js/profile.js"></script>
+<script src="/js/profile.js"></script>
