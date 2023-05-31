@@ -1,5 +1,5 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
 class Story extends Model {}
 
@@ -27,11 +27,15 @@ Story.init(
       type: DataTypes.FLOAT,
       allowNull: false,
     },
+    image: {
+      type: DataTypes.ARRAY(DataTypes.STRING),
+      allowNull: true, // Allow the field to be nullable
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'user',
-        key: 'id',
+        model: "user",
+        key: "id",
       },
     },
   },
@@ -40,7 +44,7 @@ Story.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'story',
+    modelName: "story",
   }
 );
 
