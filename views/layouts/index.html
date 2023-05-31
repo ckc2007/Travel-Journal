@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./vendor.css" rel="stylesheet" />
+    <link href="../../public/css/index.css" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Travel Journal</title>
+  </head>
+  <body>
+    <header class="w-4/5 mx-auto py-6 flex justify-between items-center">
+      <!-- Brand name -->
+      <div>
+        <h1 class="text-2xl text-gray-800 font-bold">Travel Journal</h1>
+      </div>
+
+      <!--menu-->
+      <div>
+        <ul class="flex">
+          <li class="mx-4">
+            <span class="font-bold text-gray-700">Home</span>
+          </li>
+          <li class="mx-4">
+            <span class="font-medium text-gray-500">Trip Planner</span>
+          </li>
+          <li class="mx-4">
+            <span class="font-medium text-gray-500">Stories</span>
+          </li>
+          <li class="mx-4">
+            <span class="font-light text-gray-500">
+              <i data-feather="log-in" class="text-gray-400"></i>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="w-11/12 flex ml-auto relative">
+      <section class="py-16 px-16 hero w-full flex justify-between">
+        <div>
+          <!-- heading area -->
+          <h1 class="text-white text-5xl font-hairline leading-tight">
+            <span class="font-semibold"> Discover</span> a touch <br />
+            of nature's <br />
+            clarity
+          </h1>
+          <div class="mt-10">
+            <div
+              class="h-10 w-10 border border-blue-300 flex justify-center items-center"
+            >
+              <i data-feather="play" class="text-white fill-current h-4"></i>
+            </div>
+          </div>
+        </div>
+        <div>
+          <!-- Indicators area -->
+          <h2 class="text-3xl tracking-wide font-extrabold text-white">01</h2>
+          <div class="flex flex-col mt-8 items-center">
+            <div class="h-2 w-2 border border-white rounded-full mb-4"></div>
+            <div
+              class="h-2 w-2 border border-white bg-white rounded-full mb-4"
+            ></div>
+            <div class="h-2 w-2 border border-white rounded-full mb-4"></div>
+            <div class="h-2 w-2 border border-white rounded-full mb-4"></div>
+          </div>
+          <div class="flex flex-col items-center text-white mt-8">
+            <i data-feather="chevron-up" class="mb-3 h-4 w-4"></i>
+            <i data-feather="chevron-down" class="h-4 w-4"></i>
+          </div>
+        </div>
+      </section>
+      <!-- floating call to action -->
+      <div
+        class="absolute flex py-6 px-8 justify-between items-center w-3/4 shadow-xl bg-white floating-sub-hero">
+        <div>
+          <p
+            class="uppercase mb-0 text-gray-400 text-xxs font-bold tracking-wider">
+            Asian
+          </p>
+          <h2 class="text-2xl mb-0 tracking-wide font-normal">
+            <b>Indonesia</b>
+          </h2>
+        </div>
+        <div class="flex">
+          <div class="flex flex-col items-end">
+            <p
+              class="text-gray-400 uppercase font-bold text-xs tracking-wider m-0">
+              Summer tour
+            </p>
+            <p class="text-left uppercase text-xs mb-0 mt-2 font-black">
+              Nov 2018
+            </p>
+          </div>
+          <div class="ml-5">
+            <div
+              class="h-12 w-12 bg-blue-600 flex items-center justify-center shadow">
+              <p class="text-white m-0 text-3xl font-hairline">+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    feather.replace();
+  </script>
+</html>

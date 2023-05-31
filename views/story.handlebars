@@ -12,17 +12,17 @@
 <div id="comment-section">
   <h4>comments section</h4>
   <br>
+  <div id="comments-container">
   <form id="comment-form">
     <textarea id="comment-textarea" placeholder="Write your comment here"></textarea>
   <br>
     <button type="submit" id="comment-submit">Comment</button>
   </form>
   <br>
-  <div id="comments-container">
     {{#each comments}}
     <div>
-      <b><p>{{this.user.name}}</p></b>
-      <i><p>{{this.comments}}</p></i>
+      <b><p id="user-name">{{this.user.name}}</p></b>
+      <i><p id="user-comment">{{this.comments}}</p></i>
     </div>
     {{/each}}
   </div>
@@ -30,3 +30,4 @@
 
 <link rel="stylesheet" href="/css/style.css">
 <script src="/js/story.js"></script>
+
