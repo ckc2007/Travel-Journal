@@ -6,6 +6,11 @@ const withAuth = require("../../utils/auth");
 //POST request to create new story
 router.post("/", upload, withAuth, async (req, res) => {
   try {
+    // error handling for file upload <<< optional <<< take out if not needed
+    if (!req.files || req.files.length === 0) {
+      res.status(400).json({ message: "No files uploaded" });
+      return;
+    }
     const newStory = await Story.create({
       ...req.body,
       image: req.files.map((file) => file.filename), //Updated code
