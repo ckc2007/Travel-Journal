@@ -4,7 +4,7 @@ const upload = require("../../utils/auth");
 const withAuth = require("../../utils/auth");
 
 //POST request to create new story
-router.post("/", withAuth, async (req, res) => {
+router.post("/", upload, withAuth, async (req, res) => {
   try {
     const newStory = await Story.create({
       ...req.body,
