@@ -8,6 +8,7 @@ router.post("/", upload, withAuth, async (req, res) => {
   try {
     const newStory = await Story.create({
       ...req.body,
+      image: req.files.map((file) => file.filename), //Updated code
       user_id: req.session.user_id,
     });
     res.status(200).json(newStory);
