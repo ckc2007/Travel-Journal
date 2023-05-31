@@ -77,6 +77,7 @@ router.get("/stories/:id", async (req, res) => {
     //render both story and comments and check if user is logged_in
     res.render("story", {
       ...story,
+      image: imageArray, // Pass the image array to the template
       comments,
       logged_in: req.session.logged_in,
     });
