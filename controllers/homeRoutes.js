@@ -19,7 +19,12 @@ router.get("/", async (req, res) => {
     });
 
     // Serialize data so the template can read it
-    const stories = storyData.map((story) => story.get({ plain: true }));
+    // major debug here - must have JSON parse the image array
+    const stories = storyData.map((story) => {
+      const plainStory = story.get({ plain: true });
+      const imageArray = plainStory.image ? JSON.parse(plainStory.image) : [];
+      return { ...plainStory, image: imageArray };
+    });
 
     // Pass serialized data and session flag into template
     res.render("homepage", {
