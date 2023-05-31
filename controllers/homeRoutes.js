@@ -53,6 +53,9 @@ router.get("/stories/:id", async (req, res) => {
     //store storyData collected in to story and serialize it
     const story = storyData.get({ plain: true });
 
+    // Pass the image array to the template
+    const imageArray = story.image ? JSON.parse(story.image) : [];
+
     //collecting comment data
     const commentsData = await Comment.findAll({
       where: {
