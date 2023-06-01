@@ -1,7 +1,6 @@
 //IMPORT ALL NECESSARY FILES AND FOLDERS
 const router = require("express").Router();
-const { Story, User, Comment } = require("../models");
-const upload = require("../utils/upload");
+const { Story, User, upload, Comment } = require("../models");
 const withAuth = require("../utils/auth");
 
 //----HOMEPAGE GET REQUEST----
