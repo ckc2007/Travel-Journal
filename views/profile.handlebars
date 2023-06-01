@@ -8,18 +8,37 @@
   <div class="col-md-6">
     <h3>Add A New Point Of Interest:</h3>
 
-    <form class="form new-project-form">
+    <form
+      class="form new-project-form"
+      enctype="multipart/form-data"
+      action="/api/stories"
+      method="POST"
+    >
       <div class="form-group">
         <label for="project-name">Point Of Interest:</label>
-        <input class="form-input" type="text" id="project-name" name="project-name" />
+        <input
+          class="form-input"
+          type="text"
+          id="project-name"
+          name="project-name"
+        />
       </div>
       <div class="form-group">
         <label for="project-funding">Cost of Activity ($):</label>
-        <input class="form-input" type="number" id="project-funding" name="project-funding" />
+        <input
+          class="form-input"
+          type="number"
+          id="project-funding"
+          name="project-funding"
+        />
       </div>
       <div class="form-group">
         <label for="project-desc">Write-Up:</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+        <textarea
+          class="form-input"
+          id="project-desc"
+          name="project-desc"
+        ></textarea>
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Create</button>
@@ -28,20 +47,23 @@
   </div>
 
   {{#if stories.length}}
-  <div class="col-md-6 project-list">
-    <h3>Storyboard:</h3>
+    <div class="col-md-6 project-list">
+      <h3>Storyboard:</h3>
 
-    {{#each stories as |story|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/stories/{{story.id}}">{{story.name}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{story.id}}">DELETE</button>
-      </div>
+      {{#each stories as |story|}}
+        <div class="row mb-2">
+          <div class="col-md-8">
+            <h4><a href="/stories/{{story.id}}">{{story.name}}</a></h4>
+          </div>
+          <div class="col-md-4">
+            <button
+              class="btn btn-sm btn-danger"
+              data-id="{{story.id}}"
+            >DELETE</button>
+          </div>
+        </div>
+      {{/each}}
     </div>
-    {{/each}}
-  </div>
   {{/if}}
 </div>
 

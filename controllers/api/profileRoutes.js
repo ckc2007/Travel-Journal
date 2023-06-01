@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Story } = require("../../models");
+const { Story } = require("../../models/Story");
 const upload = require("../../utils/auth");
 const withAuth = require("../../utils/auth");
 
