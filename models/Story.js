@@ -29,7 +29,7 @@ Story.init(
       allowNull: false,
     },
     image: {
-      type: DataTypes.STRING,
+      type: DataTypes.ARRAY(DataTypes.STRING),
       allowNull: true, // Allow the field to be nullable
     },
     user_id: {
