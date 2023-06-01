@@ -13,4 +13,24 @@
 .floating-sub-hero {
     bottom: -7%;
     left: 10%;
-  }
+}
+
+.text-xxs {
+      font-size: 9px;
+}
+.dollar-sign {
+      top: 11px;
+      left: 11px;
+}
+.fill-blue {
+      fill: #3182ce;
+}
+
+img {
+      max-width: 100%;
+      max-height: 100%;
+}
+.tour-card .image-section {
+      width: 200px;
+      height: 250px;
+}
