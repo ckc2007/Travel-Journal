@@ -1,5 +1,6 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
+const multer = require("multer");
 
 class Story extends Model {}
 
@@ -27,11 +28,15 @@ Story.init(
       type: DataTypes.FLOAT,
       allowNull: false,
     },
+    image: {
+      type: DataTypes.ARRAY(DataTypes.STRING),
+      allowNull: true, // Allow the field to be nullable
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'user',
-        key: 'id',
+        model: "user",
+        key: "id",
       },
     },
   },
@@ -40,8 +45,21 @@ Story.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'story',
+    modelName: "story",
   }
 );
 
-module.exports = Story;
+// Configure multer for file uploads
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, "public/images"); // Specify the directory where uploaded images will be stored
+  },
+  filename: function (req, file, cb) {
+    // Generate a unique filename for the uploaded file
+    cb(null, Date.now() + "-" + file.originalname);
+  },
+});
+
+const upload = multer({ storage: storage }).array("image", 5);
+
+module.exports = { Story, upload };
