@@ -1,3 +1,4 @@
+//Create New Comment
 const newCommentHandler = async (event) => {
   event.preventDefault();
   
@@ -30,6 +31,27 @@ const newCommentHandler = async (event) => {
   }
 };
 
+//Delete Comment
+const delCommentsHandler = async (event) => {
+  if (event.target.hasAttribute("data-id")) {
+    const id = event.target.getAttribute("data-id");
+
+    const response = await fetch(`/api/comments/${id}`, {
+      method: "DELETE",
+    });
+
+    if (response.ok) {
+      document.location.reload()
+    } else {
+      alert("Failed to delete comment");
+    }
+  }
+};
+
 document
   .querySelector('#comment-submit')
   .addEventListener('click', newCommentHandler);
+
+document
+  .querySelector('#delcomment')
+  .addEventListener('click', delCommentsHandler);
