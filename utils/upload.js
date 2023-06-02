@@ -1,5 +1,6 @@
 const multer = require("multer");
-// Configure multer for file uploads
+
+// Configure multer for file upload
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, "public/images"); // Specify the directory where uploaded images will be stored
@@ -10,6 +11,6 @@ const storage = multer.diskStorage({
   },
 });
 
-const upload = multer({ storage: storage }).array("image", 5);
+const upload = multer({ storage: storage }).single("image");
 
-module.export = upload;
+module.exports = upload;
