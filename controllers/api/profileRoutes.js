@@ -1,6 +1,7 @@
 const router = require("express").Router();
-const { Story, upload } = require("../../models/Story");
+const { Story } = require("../../models/Story");
 const withAuth = require("../../utils/auth");
+const upload = require("../../utils/upload");
 
 //POST request to create new story
 router.post("/", upload, withAuth, async (req, res) => {
