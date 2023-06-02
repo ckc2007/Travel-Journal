@@ -21,9 +21,9 @@ const newFormHandler = async (event) => {
     formData.append("budget", budget);
     formData.append("blog", blog);
 
-    const imageFiles = document.querySelector("#image").files;
-    for (let i = 0; i < imageFiles.length; i++) {
-      formData.append("image", imageFiles[i]);
+    const imageFile = document.querySelector("#image").files[0];
+    if (imageFile) {
+      formData.append("image", imageFile);
     }
 
     //     const response = await fetch("/api/stories", {

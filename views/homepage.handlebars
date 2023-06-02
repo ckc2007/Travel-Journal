@@ -7,17 +7,15 @@
         <a href="/stories/{{story.id}}">{{story.name}}</a>
       </h2>
       {{! added image display section }}
-      {{#if story.image}}
-        <div class="image-container">
-          {{#each story.image}}
-            <a href="/images/{{this}}" target="_blank">
-              <img
-                src="/images/{{this}}"
-                alt="Story Image"
-                class="gallery-image"
-              />
-            </a>
-          {{/each}}
+      {{#if image}}
+        <div class="image-gallery">
+          <a href="/images/{{image}}" target="_blank">
+            <img
+              src="/images/{{image}}"
+              alt="Story Image"
+              class="gallery-image"
+            />
+          </a>
         </div>
       {{/if}}
       <p>
