@@ -6,6 +6,7 @@ const upload = require("../../utils/upload");
 //POST request to create new story
 router.post("/", upload.single("image"), withAuth, async (req, res) => {
   try {
+    const { filename } = req.file;
     // error handling for file upload <<< optional <<< take out if not needed
     // if (!req.files) {
     //   res.status(400).json({ message: "No file uploaded" });
@@ -13,7 +14,7 @@ router.post("/", upload.single("image"), withAuth, async (req, res) => {
     // }
     const newStory = await Story.create({
       ...req.body,
-      // image: req.file.filename, //Updated code
+      image: filename, //Updated code
       user_id: req.session.user_id,
     });
     res.status(200).json(newStory);
