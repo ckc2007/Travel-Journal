@@ -35,6 +35,39 @@ router.get("/", async (req, res) => {
 });
 //----END of GET REQUEST---
 
+//----STORIES GET REQUEST----
+// Story model with User attributes, renders it to stories!
+router.get("/stories", async (req, res) => {
+  try {
+    // Get all projects and JOIN with user data
+    const storyData = await Story.findAll({
+      include: [
+        {
+          model: User,
+          attributes: ["name"],
+        },
+      ],
+    });
+
+    // Serialize data so the template can read it
+    // major debug here - must have JSON parse the image array
+    const stories = storyData.map((story) => {
+      const plainStory = story.get({ plain: true });
+      return { ...plainStory };
+    });
+
+    // Pass serialized data and session flag into template
+    res.render("stories", {
+      stories,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+//----END of GET REQUEST---
+
+
 //----STORY WITH COMMENTS GET REQUEST----
 // Story mode with User attribute to display story and associated comments
 router.get("/stories/:id", async (req, res) => {
