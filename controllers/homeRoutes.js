@@ -1,6 +1,6 @@
 //IMPORT ALL NECESSARY FILES AND FOLDERS
 const router = require("express").Router();
-const { Story, User, upload, Comment } = require("../models");
+const { Story, User, Comment } = require("../models");
 const withAuth = require("../utils/auth");
 
 //----HOMEPAGE GET REQUEST----
@@ -21,8 +21,7 @@ router.get("/", async (req, res) => {
     // major debug here - must have JSON parse the image array
     const stories = storyData.map((story) => {
       const plainStory = story.get({ plain: true });
-      const imageArray = plainStory.image ? JSON.parse(plainStory.image) : [];
-      return { ...plainStory, image: imageArray };
+      return { ...plainStory };
     });
 
     // Pass serialized data and session flag into template
@@ -35,44 +34,6 @@ router.get("/", async (req, res) => {
   }
 });
 //----END of GET REQUEST---
-
-
-//----STORIES GET REQUEST----
-// Stories, using Story model with User attributes, renders it to stories!
-router.get("/stories", async (req, res) => {
-  try {
-    // Get all projects and JOIN with user data
-    const storyData = await Story.findAll({
-      include: [
-        {
-          model: User,
-          attributes: ["name"],
-        },
-      ],
-    });
-
-    // Serialize data so the template can read it
-    // major debug here - must have JSON parse the image array
-    const stories = storyData.map((story) => {
-      const plainStory = story.get({ plain: true });
-      const imageArray = plainStory.image ? JSON.parse(plainStory.image) : [];
-      return { ...plainStory, image: imageArray };
-    });
-
-    // Pass serialized data and session flag into template
-    res.render("stories", {
-      stories,
-      logged_in: req.session.logged_in,
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-//----END of GET REQUEST---
-
-
-
-
 
 //----STORY WITH COMMENTS GET REQUEST----
 // Story mode with User attribute to display story and associated comments
@@ -90,8 +51,8 @@ router.get("/stories/:id", async (req, res) => {
     //store storyData collected in to story and serialize it
     const story = storyData.get({ plain: true });
 
-    // Pass the image array to the template
-    const imageArray = story.image ? JSON.parse(story.image) : [];
+    // Pass the image array to the template << not working with array anymore
+    // const imageArray = story.image ? JSON.parse(story.image) : [];
 
     //collecting comment data
     const commentsData = await Comment.findAll({
@@ -114,7 +75,7 @@ router.get("/stories/:id", async (req, res) => {
     //render both story and comments and check if user is logged_in
     res.render("story", {
       ...story,
-      image: imageArray, // Pass the image array to the template
+      // image: imageArray, // Pass the image array to the template <<< don't need array anymore
       comments,
       logged_in: req.session.logged_in,
     });
@@ -146,6 +107,24 @@ router.get("/profile", withAuth, async (req, res) => {
 //----END of GET REQUEST---
 
 //NEW GET REQUEST CODE GOES HERE
+
+router.get("/tripplanner", withAuth, async (req, res) => {
+  try {
+    const userData = await User.findByPk(req.session.user_id, {
+      attributes: { exclude: ["password"] },
+      include: [{ model: Story }],
+    });
+
+    const user = userData.get({ plain: true });
+
+    res.render("tripplanner", {
+      ...user,
+      logged_in: true,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 //----LOGIN GET REQUEST----
 // Renders login page for not-logged-in, and redirects to /profile for those logged-in

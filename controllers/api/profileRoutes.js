@@ -1,18 +1,20 @@
 const router = require("express").Router();
-const { Story, upload } = require("../../models/Story");
+const { Story } = require("../../models/Story");
 const withAuth = require("../../utils/auth");
+const upload = require("../../utils/upload");
 
 //POST request to create new story
-router.post("/", upload, withAuth, async (req, res) => {
+router.post("/", upload.single("image"), withAuth, async (req, res) => {
   try {
+    const { filename } = req.file;
     // error handling for file upload <<< optional <<< take out if not needed
-    if (!req.files || req.files.length === 0) {
-      res.status(400).json({ message: "No files uploaded" });
-      return;
-    }
+    // if (!req.files) {
+    //   res.status(400).json({ message: "No file uploaded" });
+    //   return;
+    // }
     const newStory = await Story.create({
       ...req.body,
-      image: req.files.map((file) => file.filename), //Updated code
+      image: filename, //Updated code
       user_id: req.session.user_id,
     });
     res.status(200).json(newStory);
