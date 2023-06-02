@@ -109,6 +109,25 @@ router.get("/profile", withAuth, async (req, res) => {
 
 //NEW GET REQUEST CODE GOES HERE
 
+router.get("/tripplanner", withAuth, async (req, res) => {
+  try {
+    const userData = await User.findByPk(req.session.user_id, {
+      attributes: { exclude: ["password"] },
+      include: [{ model: Story }],
+    });
+
+    const user = userData.get({ plain: true });
+
+    res.render("tripplanner", {
+      ...user,
+      logged_in: true,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+
 //----LOGIN GET REQUEST----
 // Renders login page for not-logged-in, and redirects to /profile for those logged-in
 router.get("/login", (req, res) => {
