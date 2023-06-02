@@ -7,37 +7,37 @@
     <span class="dollar-amount">{{format_amount budget}}</span>
     needed
   </p>
-  {{!-- added image display section --}}
+  {{! added image display section }}
   {{#if image}}
-  <div class="image-gallery">
-    {{#each image}}
-      <a href="/images/{{this}}" target="_blank">
-        <img src="/images/{{this}}" alt="Story Image" class="gallery-image" />
+    <div class="image-gallery">
+      <a href="/images/{{image}}" target="_blank">
+        <img src="/images/{{image}}" alt="Story Image" class="gallery-image" />
       </a>
-    {{/each}}
-  </div>
-{{/if}}
+    </div>
+  {{/if}}
 </div>
 
 <div id="comment-section">
   <h4>comments section</h4>
-  <br>
+  <br />
   <div id="comments-container">
-  <form id="comment-form">
-    <textarea id="comment-textarea" placeholder="Write your comment here"></textarea>
-  <br>
-    <button type="submit" id="comment-submit">Comment</button>
-  </form>
-  <br>
+    <form id="comment-form">
+      <textarea
+        id="comment-textarea"
+        placeholder="Write your comment here"
+      ></textarea>
+      <br />
+      <button type="submit" id="comment-submit">Comment</button>
+    </form>
+    <br />
     {{#each comments}}
-    <div>
-      <b><p id="user-name">{{this.user.name}}</p></b>
-      <i><p id="user-comment">{{this.comments}}</p></i>
-    </div>
+      <div>
+        <b><p id="user-name">{{this.user.name}}</p></b>
+        <i><p id="user-comment">{{this.comments}}</p></i>
+      </div>
     {{/each}}
   </div>
 </div>
 
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/style.css" />
 <script src="/js/story.js"></script>
-

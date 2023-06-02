@@ -7,13 +7,13 @@ const upload = require("../../utils/upload");
 router.post("/", upload.single("image"), withAuth, async (req, res) => {
   try {
     // error handling for file upload <<< optional <<< take out if not needed
-    if (!req.files) {
-      res.status(400).json({ message: "No file uploaded" });
-      return;
-    }
+    // if (!req.files) {
+    //   res.status(400).json({ message: "No file uploaded" });
+    //   return;
+    // }
     const newStory = await Story.create({
       ...req.body,
-      image: req.file.filename, //Updated code
+      // image: req.file.filename, //Updated code
       user_id: req.session.user_id,
     });
     res.status(200).json(newStory);
