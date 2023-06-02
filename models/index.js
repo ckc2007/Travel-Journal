@@ -30,13 +30,13 @@ Comment.belongsTo(User, {
   foreignKey: "user_id",
 });
 
-User.hasMany(Trip, {
-  foreignKey: "user_id",
-  onDelete: "CASCADE",
-});
+// User.hasMany(Trip, {
+//   foreignKey: "user_id",
+//   onDelete: "CASCADE",
+// });
 
-Trip.belongsTo(User, {
-  foreignKey: "user_id",
-});
+// Trip.belongsTo(User, {
+//   foreignKey: "user_id",
+// });
 
 module.exports = { User, Story, Trip, Comment };

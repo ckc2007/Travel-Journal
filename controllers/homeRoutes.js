@@ -59,8 +59,6 @@ router.get("/stories", async (req, res) => {
       return { ...plainStory, image: imageArray };
     });
 
-    console.log(plainStory)
-    console.log(stories)
     // Pass serialized data and session flag into template
     res.render("stories", {
       stories,
