@@ -15,6 +15,10 @@ Trip.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    description: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,
@@ -38,6 +42,12 @@ Trip.init(
     freezeTableName: true,
     underscored: true,
     modelName: "trip",
+    indexes: [
+      {
+        type: "FULLTEXT",
+        fields: ["tripname", "description"],
+      },
+    ],
   }
 );
 

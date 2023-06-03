@@ -1,7 +1,11 @@
 //IMPORT ALL NECESSARY FILES AND FOLDERS
 const router = require("express").Router();
-const { Story, User, Comment } = require("../models");
+const { Story, User, Comment, Trip } = require("../models");
+const { Op } = require("sequelize");
 const withAuth = require("../utils/auth");
+
+
+
 
 //----HOMEPAGE GET REQUEST----
 // Homepage, using Story model with User attributes, renders it to homepage!
@@ -35,6 +39,10 @@ router.get("/", async (req, res) => {
 });
 //----END of GET REQUEST---
 
+
+
+
+
 //----STORIES GET REQUEST----
 // Story model with User attributes, renders it to stories!
 router.get("/stories", async (req, res) => {
@@ -66,6 +74,11 @@ router.get("/stories", async (req, res) => {
   }
 });
 //----END of GET REQUEST---
+
+
+
+
+
 
 
 //----STORY WITH COMMENTS GET REQUEST----
@@ -118,6 +131,10 @@ router.get("/stories/:id", async (req, res) => {
 });
 //----END of GET REQUEST---
 
+
+
+
+
 //----PROFILE GET REQUEST----
 // User model with Story model attributes and checks to see if they're logged in first
 router.get("/profile", withAuth, async (req, res) => {
@@ -139,25 +156,46 @@ router.get("/profile", withAuth, async (req, res) => {
 });
 //----END of GET REQUEST---
 
-//NEW GET REQUEST CODE GOES HERE
 
-router.get("/tripplanner", withAuth, async (req, res) => {
+
+
+
+
+// Route for searching trips
+router.get("/api/trips/search", async (req, res) => {
+  const searchTerm = req.query.term;
+
   try {
-    const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ["password"] },
-      include: [{ model: Story }],
+    const trips = await Trip.findAll({
+      where: {
+        [Op.or]: {
+          tripname: {
+            [Op.like]: `%${searchTerm}%`,
+          },
+          description: {
+            [Op.like]: `%${searchTerm}%`,
+          },
+        },
+      },
     });
 
-    const user = userData.get({ plain: true });
-
-    res.render("tripplanner", {
-      ...user,
-      logged_in: true,
-    });
-  } catch (err) {
-    res.status(500).json(err);
+    res.json(trips);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Server error" });
   }
 });
+
+
+
+
+
+
+
+
+
+
+
 
 //----LOGIN GET REQUEST----
 // Renders login page for not-logged-in, and redirects to /profile for those logged-in
