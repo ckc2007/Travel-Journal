@@ -24,24 +24,24 @@
       <div>
         <ul class="flex">
           <li class="mx-4">
-            <a href="/" class="font-medium text-gray-500 hover:font-bold">Home</a>
+            <a href="/" class="font-medium text-gray-700 hover:font-bold">Home</a>
           </li>
           <li class="mx-4">
-            <a href="/tripplanner" class="font-medium text-gray-500 hover:font-bold">Trip Planner</a>
+            <a href="/tripplanner" class="font-medium text-gray-700 hover:font-bold">Trip Planner</a>
           </li>
           <li class="mx-4">
-            <a href="/stories" class="font-medium text-gray-500 hover:font-bold">Stories</a>
+            <a href="/stories" class="font-medium text-gray-700 hover:font-bold">Stories</a>
           </li>
           <li class="mx-4">
-            <a href="/profile" class="font-medium text-gray-500 hover:font-bold">Profile</a>
+            <a href="/profile" class="font-medium text-gray-700 hover:font-bold">Profile</a>
           </li>
           {{#if logged_in}}
           <li class="mx-4">
-            <a href="/"><i data-feather="log-out" class="text-gray-500 no-button" id="logout"></i></a>
+            <a href="/"><i data-feather="user-x" class="text-red-500 no-button" id="logout"></i></a>
           </li>
           {{else}}
           <li class="mx-4">
-            <a href="/login"><i data-feather="log-in" class="text-gray-500"></i></a>
+            <a href="/login"><i data-feather="user" class="text-gray-700"></i></a>
           </li>
           {{/if}}
         </ul>
