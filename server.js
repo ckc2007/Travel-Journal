@@ -17,7 +17,7 @@ const hbs = exphbs.create({ helpers });
 const sess = {
   secret: "Journal123!Blog123!",
   cookie: {
-    maxAge: 300000,
+    maxAge: 86400000,
     httpOnly: true,
     secure: false,
     sameSite: "strict",
@@ -42,6 +42,6 @@ app.use("/images", express.static("public/images"));
 
 app.use(routes);
 
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => console.log("Now listening"));
 });

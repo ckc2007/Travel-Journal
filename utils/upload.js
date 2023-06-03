@@ -1,5 +1,7 @@
 const multer = require("multer");
 
+let counter = 1;
+
 // Configure multer for file upload
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -7,7 +9,9 @@ const storage = multer.diskStorage({
   },
   filename: function (req, file, cb) {
     // Generate a unique filename for the uploaded file
-    cb(null, Date.now() + "-" + file.originalname);
+    const newFileName = `${counter}` + '-' + file.originalname;
+    counter++;
+    cb(null, newFileName);
   },
 });
 
