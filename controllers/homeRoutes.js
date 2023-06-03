@@ -162,7 +162,7 @@ router.get("/profile", withAuth, async (req, res) => {
 
 
 // Route for searching trips
-app.get("/api/trips/search", async (req, res) => {
+router.get("/api/trips/search", async (req, res) => {
   const searchTerm = req.query.term;
 
   try {
