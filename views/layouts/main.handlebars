@@ -35,9 +35,15 @@
           <li class="mx-4">
             <a href="/profile" class="font-medium text-gray-500 hover:font-bold">Profile</a>
           </li>
+          {{#if logged_in}}
           <li class="mx-4">
-            <i data-feather="log-in" class="text-gray-500"></i>
+            <a href="/"><i data-feather="log-out" class="text-gray-500 no-button" id="logout"></i></a>
           </li>
+          {{else}}
+          <li class="mx-4">
+            <a href="/login"><i data-feather="log-in" class="text-gray-500"></i></a>
+          </li>
+          {{/if}}
         </ul>
       </div>
     </header>
@@ -51,9 +57,13 @@
       <p>&copy; 2023 Travel Journal. All rights reserved.</p>
     </div>
   </footer>
+
   </body>
 
-  <script>
-    feather.replace();
-  </script>
+  <script>feather.replace();</script>
+
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+
 </html>

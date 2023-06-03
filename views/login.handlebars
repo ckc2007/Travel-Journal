@@ -1,72 +1,81 @@
+<div
+  class="bg-grey-lighter flex flex-row justify-center items-center mx-auto py-12"
+>
+  <!-- Signup Container -->
+  <div
+    class="container max-w-sm flex-1 flex flex-col items-center justify-center px-4"
+  >
+    <div class="bg-white px-6 py-6 rounded shadow-md text-black w-full">
+      <h1 class="mb-8 text-3xl text-center">Sign up</h1>
+      <form class="form signup-form">
+        <input
+          type="text"
+          class="block border border-grey-light w-full p-3 rounded mb-4"
+          id="name-signup"
+          name="fullname"
+          placeholder="Full Name"
+        />
 
-    <div class="bg-grey-lighter flex flex-row justify-center items-center mx-auto py-12">
-        <!-- Signup Container -->
-        <div class="container max-w-sm flex-1 flex flex-col items-center justify-center px-4">
-            <div class="bg-white px-6 py-6 rounded shadow-md text-black w-full">
-                <h1 class="mb-8 text-3xl text-center">Sign up</h1>
-                <form class="form signup-form">
-                <input 
-                    type="text"
-                    class="block border border-grey-light w-full p-3 rounded mb-4"
-                    id="name-signup"
-                    name="fullname"
-                    placeholder="Full Name" />
-    
-                <input 
-                    type="text"
-                    class="block border border-grey-light w-full p-3 rounded mb-4"
-                    id="email-signup"
-                    name="email"
-                    placeholder="Email" />
-    
-                <input 
-                    type="password"
-                    class="block border border-grey-light w-full p-3 rounded mb-4"
-                    id="password-signup"
-                    name="password"
-                    placeholder="Password" />
-    
-                <button
-                    type="submit"
-                    class="w-full text-center py-3 rounded bg-black text-white hover:bg-gray-600 focus:outline-none my-1"
-                >Create Account</button>
-                </form>
-            </div>
-        </div>
-    
-        <!-- Login Container -->
-        <div class="container max-w-sm flex-1 flex flex-col items-center justify-center px-5">
-            <div class="bg-white px-6 py-6 rounded shadow-md text-black w-full">
-                <h1 class="mb-8 text-3xl text-center">Login</h1>
-                <form class="form login-form">
-                <input 
-                    type="text"
-                    class="block border border-grey-light w-full p-3 rounded mb-4"
-                    id="email-login"
-                    name="email"
-                    placeholder="Email" />
-    
-                <input 
-                    type="password"
-                    class="block border border-grey-light w-full p-2 rounded mb-4"
-                    id="password-login"
-                    name="password"
-                    placeholder="Password" />
-                
-                <div class="text-grey-dark mt-6 px-2 py-5">
-                    Forgot your password? 
-                    <a class="no-underline border-b border-blue text-blue" href="#">
-                        Send to email</a>.
-                </div>
+        <input
+          type="text"
+          class="block border border-grey-light w-full p-3 rounded mb-4"
+          id="email-signup"
+          name="email"
+          placeholder="Email"
+        />
 
-                
-                <button
-                    type="submit"
-                    class="w-full text-center py-3 rounded bg-black text-white hover:bg-gray-600 focus:outline-none my-1"
-                >Sign-in</button>
-                </form>
-            </div>
-        </div>
+        <input
+          type="password"
+          class="block border border-grey-light w-full p-3 rounded mb-4"
+          id="password-signup"
+          name="password"
+          placeholder="Password"
+        />
+
+        <button
+          type="submit"
+          class="w-full text-center py-3 rounded bg-black text-white hover:bg-gray-600 focus:outline-none my-1"
+        >Create Account</button>
+      </form>
     </div>
+  </div>
+
+  <!-- Login Container -->
+  <div
+    class="container max-w-sm flex-1 flex flex-col items-center justify-center px-5"
+  >
+    <div class="bg-white px-6 py-6 rounded shadow-md text-black w-full">
+      <h1 class="mb-8 text-3xl text-center">Login</h1>
+      <form class="form login-form">
+        <input
+          type="text"
+          class="block border border-grey-light w-full p-3 rounded mb-4"
+          id="email-login"
+          name="email"
+          placeholder="Email"
+        />
+
+        <input
+          type="password"
+          class="block border border-grey-light w-full p-2 rounded mb-4"
+          id="password-login"
+          name="password"
+          placeholder="Password"
+        />
+
+        <div class="text-grey-dark mt-6 px-2 py-5">
+          Forgot your password?
+          <a class="no-underline border-b border-blue text-blue" href="#">
+            Send to email</a>.
+        </div>
+
+        <button
+          type="submit"
+          class="w-full text-center py-3 rounded bg-black text-white hover:bg-gray-600 focus:outline-none my-1"
+        >Sign-in</button>
+      </form>
+    </div>
+  </div>
+</div>
 
 <script src="/js/login.js"></script>
