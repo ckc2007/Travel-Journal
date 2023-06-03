@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../../public/css/index.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Travel Journal</title>
+  </head>
+  <body>
+    <header class="w-4/5 mx-auto py-6 flex justify-between items-center">
+      <!-- Brand name -->
+      <div>
+        <h1 class="text-2xl text-gray-800 font-bold">Travel Journal</h1>
+      </div>
+
+      <!--menu-->
+      <div>
+        <ul class="flex">
+          <li class="mx-4">
+            <span class="font-medium text-gray-500 hover:font-bold">Home</span>
+          </li>
+          <li class="mx-4">
+            <span class="font-medium text-gray-500 hover:font-bold">Trip Planner</span>
+          </li>
+          <li class="mx-4">
+            <span class="font-medium text-gray-500 hover:font-bold">Stories</span>
+          </li>
+          <li class="mx-4">
+            <span class="font-medium text-gray-500 hover:font-bold">Profile</span>
+          </li>
+          <li class="mx-4">
+            <i data-feather="log-in" class="text-gray-500"></i>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="bg-grey-lighter flex flex-row justify-center items-center mx-auto py-12">
+        <!-- Signup Container -->
+        <div class="container max-w-sm flex-1 flex flex-col items-center justify-center px-4">
+            <div class="bg-white px-6 py-6 rounded shadow-md text-black w-full">
+                <h1 class="mb-8 text-3xl text-center">Sign up</h1>
+                <form class="form signup-form">
+                <input 
+                    type="text"
+                    class="block border border-grey-light w-full p-3 rounded mb-4"
+                    id="name-signup"
+                    name="fullname"
+                    placeholder="Full Name" />
+    
+                <input 
+                    type="text"
+                    class="block border border-grey-light w-full p-3 rounded mb-4"
+                    id="email-signup"
+                    name="email"
+                    placeholder="Email" />
+    
+                <input 
+                    type="password"
+                    class="block border border-grey-light w-full p-3 rounded mb-4"
+                    id="password-signup"
+                    name="password"
+                    placeholder="Password" />
+    
+                <button
+                    type="submit"
+                    class="w-full text-center py-3 rounded bg-black text-white hover:bg-gray-600 focus:outline-none my-1"
+                >Create Account</button>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Login Container -->
+        <div class="container max-w-sm flex-1 flex flex-col items-center justify-center px-5">
+            <div class="bg-white px-6 py-6 rounded shadow-md text-black w-full">
+                <h1 class="mb-8 text-3xl text-center">Login</h1>
+    
+                <input 
+                    type="text"
+                    class="block border border-grey-light w-full p-3 rounded mb-4"
+                    name="email"
+                    placeholder="Email" />
+    
+                <input 
+                    type="password"
+                    class="block border border-grey-light w-full p-2 rounded mb-4"
+                    name="password"
+                    placeholder="Password" />
+                
+                <div class="text-grey-dark mt-6 px-2 py-5">
+                    Forgot your password? 
+                    <a class="no-underline border-b border-blue text-blue" href="#">
+                        Send to email</a>.
+                </div>
+
+                
+                <button
+                    type="submit"
+                    class="w-full text-center py-3 rounded bg-black text-white hover:bg-gray-600 focus:outline-none my-1"
+                >Sign-in</button>
+                
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+          <!-- Footer -->
+  <footer class="bg-gray-200 py-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2023 Travel Journal. All rights reserved.</p>
+    </div>
+  </footer>
+  </body>
+
+  <script>
+    feather.replace();
+  </script>
+
+</html>
