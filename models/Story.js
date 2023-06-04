@@ -29,7 +29,7 @@ Story.init(
     },
     image: {
       type: DataTypes.STRING,
-      allowNull: true, // Allow the field to be nullable
+      allowNull: true,
     },
     user_id: {
       type: DataTypes.INTEGER,
