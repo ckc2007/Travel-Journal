@@ -53,6 +53,10 @@ Third party assets used in this project include:
 - [Sequelize](https://www.npmjs.com/package/sequelize)
 - [Multer](https://www.npmjs.com/package/multer)
 
+Tutorials used in this project include:
+
+- ["Image / File Upload On Node Sequelize...Multer" by Great Adib](https://www.google.com/search?sxsrf=APwXEdd_5NYqHYZJ0dpjiUC_PNZlgV1P7A:1685826967600[…]rnsgqj_AhXsFFkFHZnnD9sQBSgAegQIExAB&biw=1810&bih=1006&dpr=0.9)
+
 ## License
 
 This project is licensed under the MIT license.
