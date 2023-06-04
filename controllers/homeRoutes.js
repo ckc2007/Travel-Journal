@@ -4,9 +4,6 @@ const { Story, User, Comment, Trip } = require("../models");
 const { Op } = require("sequelize");
 const withAuth = require("../utils/auth");
 
-
-
-
 //----HOMEPAGE GET REQUEST----
 // Homepage, using Story model with User attributes, renders it to homepage!
 router.get("/", async (req, res) => {
@@ -22,7 +19,6 @@ router.get("/", async (req, res) => {
     });
 
     // Serialize data so the template can read it
-    // major debug here - must have JSON parse the image array
     const stories = storyData.map((story) => {
       const plainStory = story.get({ plain: true });
       return { ...plainStory };
@@ -39,10 +35,6 @@ router.get("/", async (req, res) => {
 });
 //----END of GET REQUEST---
 
-
-
-
-
 //----STORIES GET REQUEST----
 // Story model with User attributes, renders it to stories!
 router.get("/stories", async (req, res) => {
@@ -58,9 +50,11 @@ router.get("/stories", async (req, res) => {
     });
 
     // Serialize data so the template can read it
-    // major debug here - must have JSON parse the image array
     const stories = storyData.map((story) => {
       const plainStory = story.get({ plain: true });
+      if (plainStory.images) {
+        plainStory.images = JSON.parse(plainStory.images);
+      }
       return { ...plainStory };
     });
 
@@ -74,12 +68,6 @@ router.get("/stories", async (req, res) => {
   }
 });
 //----END of GET REQUEST---
-
-
-
-
-
-
 
 //----STORY WITH COMMENTS GET REQUEST----
 // Story mode with User attribute to display story and associated comments
@@ -97,8 +85,12 @@ router.get("/stories/:id", async (req, res) => {
     //store storyData collected in to story and serialize it
     const story = storyData.get({ plain: true });
 
-    // Pass the image array to the template << not working with array anymore
-    // const imageArray = story.image ? JSON.parse(story.image) : [];
+    if (story.images) {
+      story.images = JSON.parse(story.images);
+    }
+
+    console.log(story); // Log the story object
+    console.log(story.images);
 
     //collecting comment data
     const commentsData = await Comment.findAll({
@@ -121,7 +113,6 @@ router.get("/stories/:id", async (req, res) => {
     //render both story and comments and check if user is logged_in
     res.render("story", {
       ...story,
-      // image: imageArray, // Pass the image array to the template <<< don't need array anymore
       comments,
       logged_in: req.session.logged_in,
     });
@@ -130,10 +121,6 @@ router.get("/stories/:id", async (req, res) => {
   }
 });
 //----END of GET REQUEST---
-
-
-
-
 
 //----PROFILE GET REQUEST----
 // User model with Story model attributes and checks to see if they're logged in first
@@ -155,11 +142,6 @@ router.get("/profile", withAuth, async (req, res) => {
   }
 });
 //----END of GET REQUEST---
-
-
-
-
-
 
 // Route for searching trips
 router.get("/api/trips/search", async (req, res) => {
@@ -185,17 +167,6 @@ router.get("/api/trips/search", async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 });
-
-
-
-
-
-
-
-
-
-
-
 
 //----LOGIN GET REQUEST----
 // Renders login page for not-logged-in, and redirects to /profile for those logged-in
