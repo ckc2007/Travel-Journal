@@ -1,0 +1,337 @@
+[
+    {
+    "tripname": "Bali Retreat",
+    "description": "Experience the beautiful beaches, lush landscapes, and vibrant culture of Bali.",
+    "budget": "$2000"
+    },
+    {
+    "tripname": "European Adventure",
+    "description": "Explore the iconic cities of Europe, from Rome to Paris to Barcelona.",
+    "budget": "$5000"
+    },
+    {
+    "tripname": "Safari in Kenya",
+    "description": "Embark on a thrilling safari adventure in the vast savannas of Kenya.",
+    "budget": "$4000"
+    },
+    {
+    "tripname": "New York City Escape",
+    "description": "Discover the bustling streets, famous landmarks, and diverse culture of New York City.",
+    "budget": "$2500"
+    },
+    {
+    "tripname": "Machu Picchu Expedition",
+    "description": "Hike to the ancient Incan ruins of Machu Picchu in the Peruvian Andes.",
+    "budget": "$3000"
+    },
+    {
+    "tripname": "Tokyo Exploration",
+    "description": "Immerse yourself in the futuristic cityscape, traditional temples, and mouthwatering cuisine of Tokyo.",
+    "budget": "$3500"
+    },
+    {
+    "tripname": "Cruise in the Caribbean",
+    "description": "Relax on pristine beaches and enjoy water activities on a luxurious Caribbean cruise.",
+    "budget": "$4000"
+    },
+    {
+    "tripname": "Road Trip Across the USA",
+    "description": "Embark on an epic cross-country road trip, exploring the diverse landscapes and cities of the United States.",
+    "budget": "$5000"
+    },
+    {
+    "tripname": "Trekking in the Himalayas",
+    "description": "Challenge yourself with a trek through the breathtaking mountain ranges of the Himalayas.",
+    "budget": "$3500"
+    },
+    {
+    "tripname": "Parisian Getaway",
+    "description": "Indulge in art, fashion, and romance in the City of Light, Paris.",
+    "budget": "$3000"
+    },
+    {
+    "tripname": "African Wildlife Safari",
+    "description": "Witness the incredible wildlife of Africa on a thrilling safari adventure.",
+    "budget": "$5000"
+    },
+    {
+    "tripname": "Greek Island Hopping",
+    "description": "Explore the enchanting Greek islands, from Santorini to Mykonos to Crete.",
+    "budget": "$4000"
+    },
+    {
+    "tripname": "Adventure in Costa Rica",
+    "description": "Experience adrenaline-pumping activities like ziplining and white-water rafting in the tropical paradise of Costa Rica.",
+    "budget": "$3000"
+    },
+    {
+    "tripname": "Cultural Immersion in India",
+    "description": "Immerse yourself in the rich history, spirituality, and diverse cultures of India.",
+    "budget": "$4000"
+    },
+    {
+    "tripname": "Exploring the Australian Outback",
+    "description": "Embark on an outback adventure, discovering the unique wildlife and stunning landscapes of Australia.",
+    "budget": "$5000"
+    },
+    {
+    "tripname": "Beach Retreat in Maldives",
+    "description": "Relax on pristine white-sand beaches and indulge in luxury resorts in the Maldives.",
+    "budget": "$6000"
+    },
+    {
+    "tripname": "Historical Tour of Egypt",
+    "description": "Uncover the mysteries of ancient Egypt, from the Pyramids of Giza to the temples of Luxor.",
+    "budget": "$3500"
+    },
+    {
+    "tripname": "Scenic Train Journey in Switzerland",
+    "description": "Embark on a picturesque train journey through the Swiss Alps, witnessing stunning mountain vistas.",
+    "budget": "$3000"
+    },
+    {
+    "tripname": "Icelandic Adventure",
+    "description": "Discover the otherworldly landscapes of Iceland, from geothermal hot springs to cascading waterfalls.",
+    "budget": "$4000"
+    },
+    {
+    "tripname": "Amazon Rainforest Expedition",
+    "description": "Explore the incredible biodiversity of the Amazon rainforest on an immersive expedition.",
+    "budget": "$5000"
+    },
+    {
+    "tripname": "Cultural Discovery in Japan",
+    "description": "Immerse yourself in traditional Japanese culture, from tea ceremonies to ancient temples.",
+    "budget": "$3500"
+    },
+    {
+    "tripname": "Sailing the Greek Islands",
+    "description": "Sail through the crystal-clear waters of the Greek Islands, visiting hidden coves and charming villages.",
+    "budget": "$4000"
+    },
+    {
+    "tripname": "Wildlife Encounter in the Galapagos",
+    "description": "Witness unique wildlife up close in the Galapagos Islands, a haven of biodiversity.",
+    "budget": "$5000"
+    },
+    {
+    "tripname": "Cultural Heritage of Italy",
+    "description": "Experience the art, history, and mouthwatering cuisine of Italy, from Rome to Florence to Venice.",
+    "budget": "$4500"
+    },
+    {
+    "tripname": "Exploration of the Great Barrier Reef",
+    "description": "Dive into the vibrant underwater world of the Great Barrier Reef, the largest coral reef system on Earth.",
+    "budget": "$4000"
+    },
+    {
+    "tripname": "Serengeti Safari in Tanzania",
+    "description": "Embark on a safari adventure in the vast plains of the Serengeti, home to the Great Migration.",
+    "budget": "$4500"
+    },
+    {
+    "tripname": "City Break in Barcelona",
+    "description": "Experience the vibrant culture, stunning architecture, and lively nightlife of Barcelona.",
+    "budget": "$2500"
+    },
+    {
+    "tripname": "Cultural Journey through Southeast Asia",
+    "description": "Explore the diverse cultures, ancient temples, and delicious street food of Southeast Asia.",
+    "budget": "$5000"
+    },
+    {
+    "tripname": "Adventure in New Zealand",
+    "description": "Embark on thrilling outdoor activities, such as bungee jumping and hiking, in the stunning landscapes of New Zealand.",
+    "budget": "$4000"
+    },
+    {
+    "tripname": "Rooftop Views of Dubai",
+    "description": "Experience the opulence and modern marvels of Dubai, including its iconic skyscrapers and luxurious hotels.",
+    "budget": "$3000"
+    },
+    {
+    "tripname": "Cruise the Norwegian Fjords",
+    "description": "Sail through the breathtaking Norwegian fjords, surrounded by majestic mountains and cascading waterfalls.",
+    "budget": "$4000"
+    },
+    {
+    "tripname": "Exploring the Inca Trail",
+    "description": "Embark on a challenging trek along the historic Inca Trail to the ancient city of Machu Picchu.",
+    "budget": "$3500"
+    },
+    {
+    "tripname": "Cultural Delights of Morocco",
+    "description": "Immerse yourself in the vibrant souks, flavorful cuisine, and rich history of Morocco.",
+    "budget": "$3000"
+    },
+    {
+    "tripname": "Island Paradise in Seychelles",
+    "description": "Unwind on pristine beaches and indulge in luxury resorts in the tropical paradise of Seychelles.",
+    "budget": "$6000"
+    },
+    {
+    "tripname": "Cultural Highlights of China",
+    "description": "Explore the ancient wonders, bustling cities, and diverse landscapes of China.",
+    "budget": "$4000"
+    },
+    {
+    "tripname": "Wildlife Safari in Botswana",
+    "description": "Encounter the incredible wildlife of Botswana's national parks and the Okavango Delta.",
+    "budget": "$5000"
+    },
+    {
+    "tripname": "City of Dreams: Mumbai",
+    "description": "Experience the vibrant energy, bustling markets, and Bollywood culture of Mumbai, India.",
+    "budget": "$2500"
+    },
+    {
+    "tripname": "Cultural Immersion in Spain",
+    "description": "Immerse yourself in the lively fiestas, rich history, and delicious cuisine of Spain.",
+    "budget": "$3000"
+    },
+    {
+    "tripname": "Exploring the Temples of Angkor",
+    "description": "Discover the ancient temples and intricate architecture of Angkor Wat in Cambodia.",
+    "budget": "$3500"
+    },
+    {
+    "tripname": "Northern Lights in Norway",
+    "description": "Chase the ethereal beauty of the Northern Lights in Norway's Arctic region.",
+    "budget": "$4000"
+    },
+    {
+    "tripname": "Adventure in Patagonia",
+    "description": "Hike through the stunning landscapes of Patagonia, including the famous Torres del Paine National Park.",
+    "budget": "$4500"
+    },
+    {
+    "tripname": "Relaxation in the Maldives",
+    "description": "Escape to the idyllic Maldives, where you can unwind on private beaches and indulge in spa treatments.",
+    "budget": "$6000"
+    },
+    {
+    "tripname": "Cultural Heritage of Greece",
+    "description": "Immerse yourself in ancient history, mythology, and Greek hospitality in Athens and beyond.",
+    "budget": "$3500"
+    },
+    {
+    "tripname": "Awe-Inspiring Yosemite National Park",
+    "description": "Discover the breathtaking beauty of Yosemite National Park, with its towering waterfalls and granite cliffs.",
+    "budget": "$3000"
+    },
+    {
+    "tripname": "Safari in South Africa",
+    "description": "Embark on a thrilling safari adventure in South Africa's renowned national parks, such as Kruger National Park.",
+    "budget": "$4500"
+    },
+    {
+    "tripname": "Cultural Delights of Japan",
+    "description": "Immerse yourself in traditional Japanese customs, stunning gardens, and delicious cuisine.",
+    "budget": "$4000"
+    },
+    {
+    "tripname": "Cruise the Mediterranean",
+    "description": "Sail through the azure waters of the Mediterranean, visiting picturesque ports and ancient ruins.",
+    "budget": "$5000"
+    },
+    {
+    "tripname": "Exploring the Scottish Highlands",
+    "description": "Discover the rugged beauty of the Scottish Highlands, with its misty lochs and historic castles.",
+    "budget": "$3500"
+    },
+    {
+    "tripname": "City Break in Prague",
+    "description": "Experience the fairytale charm, medieval architecture, and rich history of Prague.",
+    "budget": "$2500"
+    },
+    {
+    "tripname": "Adventure in the Canadian Rockies",
+    "description": "Explore the breathtaking landscapes of the Canadian Rockies, with its towering mountains and turquoise lakes.",
+    "budget": "$4000"
+    },
+    {
+    "tripname": "Tropical Paradise in Fiji",
+    "description": "Unwind on palm-fringed beaches, snorkel in crystal-clear waters, and experience the warm hospitality of Fiji.",
+    "budget": "$5000"
+    },
+    {
+    "tripname": "Cultural Immersion in Vietnam",
+    "description": "Immerse yourself in the rich history, vibrant markets, and delicious street food of Vietnam.",
+    "budget": "$3500"
+    },
+    {
+    "tripname": "Exploration of the Scottish Isles",
+    "description": "Visit the remote and picturesque Scottish Isles, including the Isle of Skye and the Outer Hebrides.",
+    "budget": "$4000"
+    },
+    {
+    "tripname": "Wildlife Safari in Sri Lanka",
+    "description": "Encounter diverse wildlife, from elephants to leopards, on a safari adventure in Sri Lanka.",
+    "budget": "$4500"
+    },
+    {
+    "tripname": "Cultural Discovery of Peru",
+    "description": "Immerse yourself in the ancient ruins of Peru, including Machu Picchu and the Sacred Valley.",
+    "budget": "$4000"
+    },
+    {
+    "tripname": "Cruise the Alaskan Wilderness",
+    "description": "Sail through the stunning fjords and glaciers of Alaska, spotting whales and bald eagles along the way.",
+    "budget": "$5000"
+    },
+    {
+    "tripname": "Relaxation in the Caribbean",
+    "description": "Unwind on pristine white-sand beaches, swim in turquoise waters, and enjoy island hospitality in the Caribbean.",
+    "budget": "$4000"
+    },
+    {
+    "tripname": "Cultural Highlights of France",
+    "description": "Experience the art, culture, and gastronomy of France, from the Louvre in Paris to the vineyards of Bordeaux.",
+    "budget": "$4500"
+    },
+    {
+    "tripname": "City Break in Amsterdam",
+    "description": "Discover the charming canals, historic architecture, and vibrant culture of Amsterdam.",
+    "budget": "$2500"
+    },
+    {
+    "tripname": "Adventure in the Amazon",
+    "description": "Explore the Amazon rainforest, encountering diverse wildlife and indigenous communities.",
+    "budget": "$4000"
+    },
+    {
+    "tripname": "Cultural Immersion in Mexico",
+    "description": "Immerse yourself in the rich history, colorful traditions, and delicious cuisine of Mexico.",
+    "budget": "$3500"
+    },
+    {
+    "tripname": "Exploring the Cinque Terre",
+    "description": "Discover the picturesque villages and stunning coastal landscapes of Italy's Cinque Terre.",
+    "budget": "$3000"
+    },
+    {
+    "tripname": "Safari in Namibia",
+    "description": "Embark on a unique safari adventure in Namibia, known for its vast deserts and diverse wildlife.",
+    "budget": "$4500"
+    },
+    {
+    "tripname": "Island Hopping in Greece",
+    "description": "Explore the beautiful Greek islands, hopping from one idyllic paradise to another.",
+    "budget": "$4000"
+    },
+    {
+    "tripname": "Cultural Delights of Turkey",
+    "description": "Immerse yourself in the rich history, vibrant bazaars, and delicious cuisine of Turkey.",
+    "budget": "$3500"
+    },
+    {
+    "tripname": "Road Trip through the Scottish Highlands",
+    "description": "Embark on a scenic road trip through the rugged landscapes and charming villages of the Scottish Highlands.",
+    "budget": "$4000"
+    },
+    {
+    "tripname": "Luxury Retreat in the Maldives",
+    "description": "Indulge in a luxurious getaway in the Maldives, staying in private overwater bungalows and enjoying world-class amenities.",
+    "budget": "$6000"
+    }
+    ]
