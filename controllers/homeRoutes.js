@@ -4,9 +4,6 @@ const { Story, User, Comment, Trip } = require("../models");
 const { Op } = require("sequelize");
 const withAuth = require("../utils/auth");
 
-
-
-
 //----HOMEPAGE GET REQUEST----
 router.get("/", async (req, res) => {
   try {
@@ -36,10 +33,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-
-
-
-
 //----STORIES GET REQUEST----
 router.get("/stories", async (req, res) => {
   try {
@@ -56,6 +49,9 @@ router.get("/stories", async (req, res) => {
     // Serialize data so the template can read it
     const stories = storyData.map((story) => {
       const plainStory = story.get({ plain: true });
+      if (plainStory.images) {
+        plainStory.images = JSON.parse(plainStory.images);
+      }
       return { ...plainStory };
     });
 
@@ -68,13 +64,6 @@ router.get("/stories", async (req, res) => {
     res.status(500).json(err);
   }
 });
-
-
-
-
-
-
-
 
 //----STORY WITH COMMENTS GET REQUEST----
 router.get("/stories/:id", async (req, res) => {
@@ -90,6 +79,10 @@ router.get("/stories/:id", async (req, res) => {
 
     //store storyData collected in to story and serialize it
     const story = storyData.get({ plain: true });
+
+    if (story.images) {
+      story.images = JSON.parse(story.images);
+    }
 
     // Pass the image array to the template << not working with array anymore
     // const imageArray = story.image ? JSON.parse(story.image) : [];
@@ -115,7 +108,6 @@ router.get("/stories/:id", async (req, res) => {
     //render both story and comments and check if user is logged_in
     res.render("story", {
       ...story,
-      // image: imageArray, // Pass the image array to the template <<< don't need array anymore
       comments,
       logged_in: req.session.logged_in,
     });
@@ -123,7 +115,6 @@ router.get("/stories/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 
 //----PROFILE GET REQUEST----
 router.get("/profile", withAuth, async (req, res) => {
@@ -143,7 +134,6 @@ router.get("/profile", withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 
 //--Route for searching trips--
 router.get("/api/trips/search", async (req, res) => {
@@ -170,8 +160,6 @@ router.get("/api/trips/search", async (req, res) => {
   }
 });
 
-
-
 //----LOGIN GET REQUEST----
 router.get("/login", (req, res) => {
   // If the user is already logged in, redirect the request to another route
@@ -182,6 +170,5 @@ router.get("/login", (req, res) => {
 
   res.render("login");
 });
-
 
 module.exports = router;
