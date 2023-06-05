@@ -4,8 +4,10 @@ const { Story, User, Comment, Trip } = require("../models");
 const { Op } = require("sequelize");
 const withAuth = require("../utils/auth");
 
+
+
+
 //----HOMEPAGE GET REQUEST----
-// Homepage, using Story model with User attributes, renders it to homepage!
 router.get("/", async (req, res) => {
   try {
     // Get all projects and JOIN with user data
@@ -33,10 +35,12 @@ router.get("/", async (req, res) => {
     res.status(500).json(err);
   }
 });
-//----END of GET REQUEST---
+
+
+
+
 
 //----STORIES GET REQUEST----
-// Story model with User attributes, renders it to stories!
 router.get("/stories", async (req, res) => {
   try {
     // Get all projects and JOIN with user data
@@ -52,9 +56,6 @@ router.get("/stories", async (req, res) => {
     // Serialize data so the template can read it
     const stories = storyData.map((story) => {
       const plainStory = story.get({ plain: true });
-      if (plainStory.images) {
-        plainStory.images = JSON.parse(plainStory.images);
-      }
       return { ...plainStory };
     });
 
@@ -67,10 +68,15 @@ router.get("/stories", async (req, res) => {
     res.status(500).json(err);
   }
 });
-//----END of GET REQUEST---
+
+
+
+
+
+
+
 
 //----STORY WITH COMMENTS GET REQUEST----
-// Story mode with User attribute to display story and associated comments
 router.get("/stories/:id", async (req, res) => {
   try {
     const storyData = await Story.findByPk(req.params.id, {
@@ -85,17 +91,13 @@ router.get("/stories/:id", async (req, res) => {
     //store storyData collected in to story and serialize it
     const story = storyData.get({ plain: true });
 
-    if (story.images) {
-      story.images = JSON.parse(story.images);
-    }
-
-    console.log(story); // Log the story object
-    console.log(story.images);
+    // Pass the image array to the template << not working with array anymore
+    // const imageArray = story.image ? JSON.parse(story.image) : [];
 
     //collecting comment data
     const commentsData = await Comment.findAll({
       where: {
-        story_id: req.params.id, //Filter comments by the specific story ID
+        story_id: req.params.id,
       },
       include: [
         {
@@ -105,7 +107,7 @@ router.get("/stories/:id", async (req, res) => {
       ],
     });
 
-    //store commentData collected into comments and serialize it
+    //commentData collected into comments and serialize it
     const comments = commentsData.map((comment) =>
       comment.get({ plain: true })
     );
@@ -113,6 +115,7 @@ router.get("/stories/:id", async (req, res) => {
     //render both story and comments and check if user is logged_in
     res.render("story", {
       ...story,
+      // image: imageArray, // Pass the image array to the template <<< don't need array anymore
       comments,
       logged_in: req.session.logged_in,
     });
@@ -120,10 +123,9 @@ router.get("/stories/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
-//----END of GET REQUEST---
+
 
 //----PROFILE GET REQUEST----
-// User model with Story model attributes and checks to see if they're logged in first
 router.get("/profile", withAuth, async (req, res) => {
   try {
     const userData = await User.findByPk(req.session.user_id, {
@@ -141,9 +143,9 @@ router.get("/profile", withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
-//----END of GET REQUEST---
 
-// Route for searching trips
+
+//--Route for searching trips--
 router.get("/api/trips/search", async (req, res) => {
   const searchTerm = req.query.term;
 
@@ -168,8 +170,9 @@ router.get("/api/trips/search", async (req, res) => {
   }
 });
 
+
+
 //----LOGIN GET REQUEST----
-// Renders login page for not-logged-in, and redirects to /profile for those logged-in
 router.get("/login", (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
@@ -179,7 +182,6 @@ router.get("/login", (req, res) => {
 
   res.render("login");
 });
-//----END of GET REQUEST---
 
-//EXPORT THE ROUTER FOR OTHER FILES AND FOLDERS TO USE
+
 module.exports = router;
