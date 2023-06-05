@@ -1,31 +1,25 @@
-<!-- Loop over each object in the projects array -->
 {{#each stories as |story|}}
   <div class="row mb-4 project">
     <div class="col-md-5">
-      <h2>
-        <a href="/stories/{{story.id}}">{{story.name}}</a>
+      <h2 class="text-2xl font-semibold">
+        <a href="/stories/{{story.id}}" class="text-blue-500 hover:underline">{{story.name}}</a>
       </h2>
       {{! added image display section }}
       {{#if story.images}}
         <div class="image-container">
           {{#each story.images}}
             <a href="/images/{{this}}" target="_blank">
-              <img
-                src="/images/{{this}}"
-                alt="Story Image"
-                class="gallery-image"
-              />
+              <img src="/images/{{this}}" alt="Story Image" class="gallery-image" />
             </a>
           {{/each}}
         </div>
       {{/if}}
-      <p>By
-        {{story.user.name}}
-        on
-        {{format_date story.date_created}}</p>
+      <p>
+        By {{story.user.name}} on {{format_date story.date_created}}
+      </p>
     </div>
     <div class="col-md-7">
-      <p>
+      <p class="text-lg">
         {{story.blog}}
       </p>
     </div>
