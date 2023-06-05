@@ -7,19 +7,17 @@ const path = require('path');
 
 
 //POST request to create new story
-router.post("/", upload.single("image"), withAuth, async (req, res) => {
+router.post("/", upload, withAuth, async (req, res) => {
   try {
-    const { filename } = req.file;
-    // error handling for file upload <<< optional <<< take out if not needed
-    // if (!req.files) {
-    //   res.status(400).json({ message: "No file uploaded" });
-    //   return;
-    // }
+    const filenames = req.files.map((file) => file.filename);
     const newStory = await Story.create({
       ...req.body,
-      image: filename, //Updated code
+      images: JSON.stringify(filenames),
       user_id: req.session.user_id,
     });
+
+    console.log("Associated images created:", filenames);
+
     res.status(200).json(newStory);
   } catch (err) {
     console.log(err);

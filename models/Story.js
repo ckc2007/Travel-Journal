@@ -27,7 +27,7 @@ Story.init(
       type: DataTypes.FLOAT,
       allowNull: false,
     },
-    image: {
+    images: {
       type: DataTypes.STRING,
       allowNull: true,
     },

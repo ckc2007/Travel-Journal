@@ -5,41 +5,18 @@ const newFormHandler = async (event) => {
   const budget = document.querySelector("#project-funding").value.trim();
   const blog = document.querySelector("#project-desc").value.trim();
 
-  // if (name && budget && blog) {
-  //   const response = await fetch(`/api/stories`, {
-  //     method: 'POST',
-  //     body: JSON.stringify({ name, budget, blog }),
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //   });
-
-  // chris added:
+  // payload:
   if (name && budget && blog) {
     const formData = new FormData();
     formData.append("name", name);
     formData.append("budget", budget);
     formData.append("blog", blog);
 
-    const imageFile = document.querySelector("#image").files[0];
-    if (imageFile) {
-      formData.append("image", imageFile);
+    const imageFiles = document.querySelector("#image").files;
+    for (let i = 0; i < imageFiles.length; i++) {
+      formData.append("images", imageFiles[i]);
     }
 
-    //     const response = await fetch("/api/stories", {
-    //       method: "POST",
-    //       body: formData,
-    //     });
-
-    //     if (response.ok) {
-    //       document.location.replace("/profile");
-    //     } else {
-    //       alert("Failed to create project");
-    //     }
-    //   }
-    // };
-
-    // chris added:
     try {
       const response = await fetch(`/api/stories`, {
         method: "POST",
