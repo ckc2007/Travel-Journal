@@ -51,7 +51,7 @@
         </div>
       </div>
 
-      {{#each comments}}
+      {{#each comments as |comment|}}
         <div class="flex flex-col">
 
           <div class="rounded-md p-3 ml-3 my-3">
@@ -63,17 +63,17 @@
               />
 
               <h3 class="font-bold">
-                {{this.user.name}}
+                {{comment.user.name}}
               </h3>
             </div>
 
             <p class="text-gray-600 mt-2">
-              {{this.comments}}
+              {{comment.comments}}
             </p>
-            {{#if this.user.name}}
+            {{#if comment.id}}
             <button
-              data-id="{{this.id}}"
-              class="text-gray-400 mt-2 text-sm px-2 py-1 rounded-md delete-comments"
+              data-id="{{comment.id}}"
+              class="text-gray-400 mt-2 text-sm px-2 py-1 rounded-md"
               id="delcomment"
             >delete</button>
             {{else}}

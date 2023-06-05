@@ -33,7 +33,7 @@ const newCommentHandler = async (event) => {
 
 //Delete Comment
 const delCommentsHandler = async (event) => {
-  if (event.target.hasAttribute("data-id")) {
+  if (event.target.getAttribute("data-id")) {
     const id = event.target.getAttribute("data-id");
 
     const response = await fetch(`/api/comments/${id}`, {
