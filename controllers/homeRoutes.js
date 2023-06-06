@@ -135,6 +135,31 @@ router.get("/profile", withAuth, async (req, res) => {
   }
 });
 
+
+//----Trip Planner----
+router.get("/tripplanner", async (req, res) => {
+  try {
+    // Get all projects and JOIN with user data
+    const tripData = await Trip.findAll({
+    });
+
+    // Serialize data so the template can read it
+    const trips = tripData.map((trip) => {
+      const plainTrip = trip.get({ plain: true });
+      return { ...plainTrip };
+    });
+
+    // Pass serialized data and session flag into template
+    res.render("tripplanner", {
+      trips,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+
 //--Route for searching trips--
 router.get("/api/trips/search", async (req, res) => {
   const searchTerm = req.query.term;
@@ -152,6 +177,8 @@ router.get("/api/trips/search", async (req, res) => {
         },
       },
     });
+
+    console.log("Search results:", trips);
 
     res.json(trips);
   } catch (error) {

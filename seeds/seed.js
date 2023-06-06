@@ -1,8 +1,9 @@
 const sequelize = require('../config/connection');
-const { User, Story } = require('../models');
+const { User, Story, Trip } = require('../models');
 
 const userData = require('./userData.json');
 const storyData = require('./storyData.json');
+const tripData = require('./tripplannerData.json');
 // const commentData = require('./commentData.json');
 
 const seedDatabase = async () => {
@@ -20,6 +21,17 @@ const seedDatabase = async () => {
     })),
     {
       returning: true,
+    }
+  );
+
+  const trips = await Trip.bulkCreate(
+    tripData.map((trip) => ({
+      tripname: trip.tripname,
+      description: trip.description,
+      budget: trip.budget,
+    })),
+    { 
+      returning: true, 
     }
   );
 
