@@ -10,12 +10,8 @@ const searchTripPlanner = async (event) => {
         const tripData = await response.json();
         console.log("Search results:", tripData);
   
-        // Process the JSON data as needed
-        // For example, you can iterate over the tripData array and display the results in the UI
-        // Update the search-results div with the processed content
-  
         const searchResults = document.getElementById("search-results");
-        searchResults.innerHTML = ''; // Clear previous search results
+        searchResults.innerHTML = '';
   
         tripData.forEach((trip) => {
           const tripElement = document.createElement("div");
