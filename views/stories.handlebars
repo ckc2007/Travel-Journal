@@ -4,8 +4,8 @@
 {{#each stories as |story|}}
   <div class="row mb-4 project border border-gray-400 shadow-lg rounded-lg hover:scale-105 ml-2 mr-8">
     <div class="col-md-5 flex justify-between">
-      <h2 class="text-4xl font-semibold py-2 px-4 text-blue-800">
-        <a href="/stories/{{story.id}}" class="amatic hover:underline">{{story.name}}</a>
+      <h2 class="text-2xl font-semibold py-2 px-4 text-blue-800">
+        <a href="/stories/{{story.id}}" class="hover:underline">{{story.name}}</a>
       </h2>
       {{! added image display section }}
       {{#if story.images}}
@@ -30,4 +30,4 @@
 {{/each}}
 </div>
 
-<link href="css/home.css" rel="stylesheet" />
+{{!-- <link href="css/home.css" rel="stylesheet" /> --}}
