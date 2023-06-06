@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/index.css" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Travel Journal</title>
+  </head>
+  <body>
+    <header class="w-4/5 mx-auto py-6 flex justify-between items-center">
+      <!-- Brand name -->
+      <div>
+        <h1 class="text-2xl text-gray-800 font-bold">Travel Journal</h1>
+      </div>
+
+      <!--menu-->
+      <div>
+        <ul class="flex">
+          <li class="mx-4">
+            <a href="/" class="font-medium text-gray-700 hover:font-bold">Home</a>
+          </li>
+          <li class="mx-4">
+            <a href="/tripplanner" class="font-medium text-gray-700 hover:font-bold">Trip Planner</a>
+          </li>
+          <li class="mx-4">
+            <a href="/stories" class="font-medium text-gray-700 hover:font-bold">Stories</a>
+          </li>
+          <li class="mx-4">
+            <a href="/profile" class="font-medium text-gray-700 hover:font-bold">Profile</a>
+          </li>
+         
+          <li class="mx-4">
+            <a href="/login"><i data-feather="user" class="text-gray-700"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </header>
+
+    <h1>Trip Search</h1>
+    <div class="border bg-gray-400 px-6 py-6 rounded-md shadow-md text-black w-1/3">
+      <form id="search-form">
+        <label for="search-term">Search Term:</label>
+        <input type="text" id="search-term" required>
+        <button type="submit" id="comment-submit" class="text-gray-700"> 
+        <img src="/imgs/search.svg">
+        </button>
+      </form>
+    </div>
+    
+      <div id="search-results">
+        <!-- Search results will be dynamically added here -->
+      </div>
+    
+      <script src="/js/tripplanner.js"></script>
+
+
+          <!-- Footer -->
+  <footer class="bg-gray-200 py-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2023 Travel Journal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  </body>
+
+  <script>feather.replace();</script>
+
+
+ 
+  
+
+</html>
