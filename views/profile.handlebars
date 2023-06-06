@@ -1,76 +1,90 @@
-<div class="row">
-  <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
+<div class="container mx-auto">
+  <div class="flex justify-center">
+    <h2 class="text-2xl font-semibold">Welcome, {{name}}!</h2>
   </div>
 </div>
 
-<div class="row mt-4">
-  <div class="col-md-6">
-    <h3>Add A New Point Of Interest:</h3>
+<div class="container mx-auto mt-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Add A New Point Of Interest:</h3>
 
-    <form
-      class="form new-project-form"
-      enctype="multipart/form-data"
-      action="/api/stories"
-      method="POST"
-    >
-      <div class="form-group">
-        <label for="project-name">Point Of Interest:</label>
-        <input class="form-input" type="text" id="project-name" name="name" />
-      </div>
-      <div class="form-group">
-        <label for="project-funding">Cost of Activity ($):</label>
-        <input
-          class="form-input"
-          type="number"
-          id="project-funding"
-          name="project-funding"
-        />
-      </div>
-      <div class="form-group">
-        <label for="project-desc">Write-Up:</label>
-        <textarea
-          class="form-input"
-          id="project-desc"
-          name="project-desc"
-        ></textarea>
-      </div>
-      <div class="form-group">
-        <label for="image">Image:</label>
-        <input
-          class="form-input"
-          type="file"
-          id="image"
-          name="images"
-          accept="image/*"
-          multiple
-        />
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
-    </form>
-  </div>
-
-  {{#if stories.length}}
-    <div class="col-md-6 project-list">
-      <h3>Storyboard:</h3>
-
-      {{#each stories as |story|}}
-        <div class="row mb-2">
-          <div class="col-md-8">
-            <h4><a href="/stories/{{story.id}}">{{story.name}}</a></h4>
-          </div>
-          <div class="col-md-4">
-            <button
-              class="btn btn-sm btn-danger"
-              data-id="{{story.id}}"
-            >DELETE</button>
-          </div>
+      <form
+        class="form new-project-form mb-8"
+        enctype="multipart/form-data"
+        action="/api/stories"
+        method="POST"
+      >
+        <div class="form-group mb-4">
+          <label for="project-name" class="font-semibold hover:underline">Point Of Interest:</label>
+          <input class="form-input" type="text" id="project-name" name="name" />
         </div>
-      {{/each}}
+        <div class="form-group mb-4">
+          <label for="project-funding" class="font-semibold hover:underline">Cost of Activity
+            ($):</label>
+          <input
+            class="form-input"
+            type="number"
+            id="project-funding"
+            name="project-funding"
+          />
+        </div>
+        <div class="form-group mb-4">
+          <label for="project-desc" class="font-semibold hover:underline">Write-Up:</label>
+          <textarea
+            class="form-input"
+            id="project-desc"
+            name="project-desc"
+          ></textarea>
+        </div>
+        <div class="form-group mb-4">
+          <label for="image" class="font-semibold hover:underline">Image:</label>
+          <input
+            class="form-input"
+            type="file"
+            id="image"
+            name="images"
+            accept="image/*"
+            multiple
+          />
+        </div>
+        <div class="form-group mb-4">
+          <button
+            type="submit"
+            class="btn btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >Create</button>
+        </div>
+      </form>
     </div>
-  {{/if}}
+
+    {{#if stories.length}}
+      <div class="col-md-6 project-list">
+        <h3
+          class="text-xl font-semibold border-b-2 border-gray-400 pb-2 mb-4"
+        >Storyboard:</h3>
+
+        {{#each stories as |story|}}
+          <div class="flex items-center mb-2">
+            <div class="flex-grow">
+              <h4 class="text-lg font-bold mb-2">
+                <a
+                  href="/stories/{{story.id}}"
+                  class="text-blue-500 hover:underline"
+                >{{story.name}}</a>
+              </h4>
+            </div>
+            <div>
+              <button class="btn btn-sm btn-danger text-purple-500 hover:underline"
+              data-id="{{story.id}}">
+                DELETE
+              </button>
+            </div>
+          </div>
+        {{/each}}
+
+      </div>
+    {{/if}}
+  </div>
 </div>
 
 <script src="/js/profile.js"></script>
