@@ -17,7 +17,6 @@ const seedDatabase = async () => {
   const stories = await Story.bulkCreate(
     storyData.map((story) => ({
       ...story,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
     })),
     {
       returning: true,
