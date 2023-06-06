@@ -18,8 +18,8 @@ const searchTripPlanner = async (event) => {
           tripElement.innerHTML = `
             <div class="border border-gray-500 flex-col flex rounded-md shadow-md ml-4 justify-between mr-20 p-2 mb-4">
             <div class="flex justify-between">
-            <h3 class="font-bold">${trip.tripname}</h3>
-            <p class="text-sm mr-4 text-green-900">$${trip.budget}</p>
+            <h1 class="text-xl text-5x1 font-semibold text-blue-900 amatic">${trip.tripname}</h1>
+            <p class="mr-4 text-green-900">$${trip.budget}</p>
             </div>
             <p>${trip.description}</p>
             </div>
