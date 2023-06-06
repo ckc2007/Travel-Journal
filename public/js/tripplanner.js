@@ -16,10 +16,10 @@ const searchTripPlanner = async (event) => {
         tripData.forEach((trip) => {
           const tripElement = document.createElement("div");
           tripElement.innerHTML = `
-            <div class="border border-gray-500 flex-col flex px-4 py-8 rounded-md shadow-md ml-4">
-            <h3>${trip.tripname}</h3>
+            <div class="border border-gray-500 flex-col flex px-2 rounded-md shadow-md ml-4">
+            <h3 class="font-bold justify-between flex">${trip.tripname}</h3>
+            <p class="text-sm">Cost: $${trip.budget}</p>
             <p>${trip.description}</p>
-            <p>Budget: ${trip.budget}</p>
           `;
           searchResults.appendChild(tripElement);
         });
