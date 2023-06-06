@@ -1,5 +1,8 @@
+<h2 class="text-3xl font-bold pt-10 ml-8 text-black">Stories</h2>
+<div class="h-1 bg-gray-300 w-55 mt-2 pl-4 ml-8"></div>
+<div class="p-4"></div>
 {{#each stories as |story|}}
-  <div class="row mb-4 project">
+  <div class="row mb-4 project border border-gray-400 shadow-lg rounded ml-2 mr-8">
     <div class="col-md-5">
       <h2 class="text-2xl font-semibold">
         <a href="/stories/{{story.id}}" class="text-blue-500 hover:underline">{{story.name}}</a>
@@ -25,3 +28,4 @@
     </div>
   </div>
 {{/each}}
+</div>
