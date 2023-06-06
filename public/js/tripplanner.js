@@ -8,7 +8,6 @@ const searchTripPlanner = async (event) => {
       try {
         const response = await fetch(`/api/trips/search?term=${searchTerm}`);
         const tripData = await response.json();
-        console.log("Search results:", tripData);
   
         const searchResults = document.getElementById("search-results");
         searchResults.innerHTML = '';

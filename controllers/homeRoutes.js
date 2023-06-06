@@ -179,8 +179,6 @@ router.get("/api/trips/search", async (req, res) => {
       },
     });
 
-    console.log("Search results:", trips);
-
     res.json(trips);
   } catch (error) {
     console.error(error);

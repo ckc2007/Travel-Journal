@@ -16,8 +16,6 @@ router.post("/", upload, withAuth, async (req, res) => {
       user_id: req.session.user_id,
     });
 
-    console.log("Associated images created:", filenames);
-
     res.status(200).json(newStory);
   } catch (err) {
     console.log(err);
