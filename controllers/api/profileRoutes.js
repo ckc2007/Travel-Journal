@@ -61,7 +61,7 @@ router.delete("/:id", withAuth, async (req, res) => {
       return;
     }
 
-    const imageFilename = storyData.image;
+    const imageFilename = storyData.images;
 
     await Story.destroy({
       where: {
