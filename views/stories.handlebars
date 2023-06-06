@@ -9,18 +9,12 @@
         <h2 class="text-2xl font-semibold py-2 px-4 text-blue-800">
           <a href="/stories/{{story.id}}" class="hover:underline">{{story.name}}</a>
         </h2>
-        {{#if story.images}}
-        <p class="text-sm font-bold mr-4 text-white">
+        <p class="text-sm font-semibold mr-4">
           By {{story.user.name}} on {{format_date story.date_created}}
         </p>
-        {{else}}
-        <p class="text-sm font-bold mr-4">
-          By {{story.user.name}} on {{format_date story.date_created}}
-        </p>
-        {{/if}}
     </div>
     <div class="col-md-7">
-        <p class="text-sm py-2 px-4">
+        <p class="text-lg py-2 px-4 font-semibold">
           {{story.blog}}
         </p>
     </div>
