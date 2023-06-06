@@ -3,20 +3,11 @@
 <div class="p-4 flex-col flex ml-2">
 {{#each stories as |story|}}
   <div class="row mb-4 project border border-gray-400 shadow-lg rounded-lg hover:scale-105 ml-2 mr-8">
+    <div class="bg-transparent rounded-md w-50 h-20 z--1" style="background-image: url('/images/{{this.images}}');"></div>
     <div class="col-md-5 flex justify-between">
       <h2 class="text-2xl font-semibold py-2 px-4 text-blue-800">
         <a href="/stories/{{story.id}}" class="hover:underline">{{story.name}}</a>
       </h2>
-      {{! added image display section }}
-      {{#if story.images}}
-        <div class="image-container">
-          {{#each story.images}}
-            <a href="/images/{{this}}" target="_blank">
-              <img src="/images/{{this}}" alt="Story Image" class="gallery-image hover:outline-blue-500 hover:transform hover:scale-105 transition ease-in-out duration-300" />
-            </a>
-          {{/each}}
-        </div>
-      {{/if}}
       <p class="text-sm mr-4 ">
         By {{story.user.name}} on {{format_date story.date_created}}
       </p>
@@ -27,7 +18,6 @@
       </p>
     </div>
   </div>
+  </div>
 {{/each}}
 </div>
-
-{{!-- <link href="css/home.css" rel="stylesheet" /> --}}
