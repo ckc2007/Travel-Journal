@@ -4,6 +4,10 @@
   font-family: "Raleway", sans-serif;
 }
 
+header h1 {
+  font-family: 'Amatic SC', cursive;
+}
+
 .image-container {
   display: flex !important;
   flex-wrap: wrap !important;
