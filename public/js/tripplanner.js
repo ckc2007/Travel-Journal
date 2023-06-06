@@ -16,7 +16,7 @@ const searchTripPlanner = async (event) => {
         tripData.forEach((trip) => {
           const tripElement = document.createElement("div");
           tripElement.innerHTML = `
-            <div class="border border-gray-500 flex-col flex p-4 rounded-md shadow-md text-center">
+            <div class="border border-gray-500 flex-col flex px-4 py-8 rounded-md shadow-md ml-4">
             <h3>${trip.tripname}</h3>
             <p>${trip.description}</p>
             <p>Budget: ${trip.budget}</p>
