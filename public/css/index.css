@@ -57,3 +57,13 @@ img {
   height: 250px;
 }
 
+.project {
+  overflow: hidden;
+}
+
+.project h2,
+.project p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

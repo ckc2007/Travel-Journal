@@ -16,8 +16,6 @@ router.post("/", upload, withAuth, async (req, res) => {
       user_id: req.session.user_id,
     });
 
-    console.log("Associated images created:", filenames);
-
     res.status(200).json(newStory);
   } catch (err) {
     console.log(err);
@@ -61,7 +59,7 @@ router.delete("/:id", withAuth, async (req, res) => {
       return;
     }
 
-    const imageFilename = storyData.image;
+    const imageFilename = storyData.images;
 
     await Story.destroy({
       where: {

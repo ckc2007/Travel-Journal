@@ -1,22 +1,22 @@
 [
   {
-    "name": "Sal",
-    "email": "sal@hotmail.com",
+    "name": "Nina Sandler",
+    "email": "nina@gmail.com",
     "password": "password1234"
   },
   {
-    "name": "Lernantino",
-    "email": "lernantino@gmail.com",
+    "name": "Allison Tune",
+    "email": "allison@gmail.com",
     "password": "password1234"
   },
   {
-    "name": "Amiko",
-    "email": "amiko2k20@aol.com",
+    "name": "Chris Chorney",
+    "email": "chris@aol.com",
     "password": "password1234"
   },
   {
-    "name": "Seth Sun",
-    "email": "seth@gmail.com",
+    "name": "Sith Sun",
+    "email": "sith@gmail.com",
     "password": "password1234"
   }
 ]

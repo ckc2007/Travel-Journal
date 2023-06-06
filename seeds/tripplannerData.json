@@ -1,337 +1,936 @@
 [
-    {
+  {
     "tripname": "Bali Retreat",
     "description": "Experience the beautiful beaches, lush landscapes, and vibrant culture of Bali.",
     "budget": "2000"
-    },
-    {
+  },
+  {
     "tripname": "European Adventure",
     "description": "Explore the iconic cities of Europe, from Rome to Paris to Barcelona.",
     "budget": "5000"
-    },
-    {
+  },
+  {
     "tripname": "Safari in Kenya",
     "description": "Embark on a thrilling safari adventure in the vast savannas of Kenya.",
     "budget": "4000"
-    },
-    {
+  },
+  {
     "tripname": "New York City Escape",
     "description": "Discover the bustling streets, famous landmarks, and diverse culture of New York City.",
     "budget": "2500"
-    },
-    {
+  },
+  {
     "tripname": "Machu Picchu Expedition",
     "description": "Hike to the ancient Incan ruins of Machu Picchu in the Peruvian Andes.",
     "budget": "3000"
-    },
-    {
+  },
+  {
     "tripname": "Tokyo Exploration",
     "description": "Immerse yourself in the futuristic cityscape, traditional temples, and mouthwatering cuisine of Tokyo.",
     "budget": "3500"
-    },
-    {
+  },
+  {
     "tripname": "Cruise in the Caribbean",
     "description": "Relax on pristine beaches and enjoy water activities on a luxurious Caribbean cruise.",
     "budget": "4000"
-    },
-    {
+  },
+  {
     "tripname": "Road Trip Across the USA",
     "description": "Embark on an epic cross-country road trip, exploring the diverse landscapes and cities of the United States.",
     "budget": "5000"
-    },
-    {
+  },
+  {
     "tripname": "Trekking in the Himalayas",
     "description": "Challenge yourself with a trek through the breathtaking mountain ranges of the Himalayas.",
     "budget": "3500"
-    },
-    {
+  },
+  {
     "tripname": "Parisian Getaway",
     "description": "Indulge in art, fashion, and romance in the City of Light, Paris.",
     "budget": "3000"
-    },
-    {
+  },
+  {
     "tripname": "African Wildlife Safari",
     "description": "Witness the incredible wildlife of Africa on a thrilling safari adventure.",
     "budget": "5000"
-    },
-    {
+  },
+  {
     "tripname": "Greek Island Hopping",
     "description": "Explore the enchanting Greek islands, from Santorini to Mykonos to Crete.",
     "budget": "4000"
-    },
-    {
+  },
+  {
     "tripname": "Adventure in Costa Rica",
     "description": "Experience adrenaline-pumping activities like ziplining and white-water rafting in the tropical paradise of Costa Rica.",
     "budget": "3000"
-    },
-    {
+  },
+  {
     "tripname": "Cultural Immersion in India",
     "description": "Immerse yourself in the rich history, spirituality, and diverse cultures of India.",
     "budget": "4000"
-    },
-    {
+  },
+  {
     "tripname": "Exploring the Australian Outback",
     "description": "Embark on an outback adventure, discovering the unique wildlife and stunning landscapes of Australia.",
     "budget": "5000"
-    },
-    {
+  },
+  {
     "tripname": "Beach Retreat in Maldives",
     "description": "Relax on pristine white-sand beaches and indulge in luxury resorts in the Maldives.",
     "budget": "6000"
-    },
-    {
+  },
+  {
     "tripname": "Historical Tour of Egypt",
     "description": "Uncover the mysteries of ancient Egypt, from the Pyramids of Giza to the temples of Luxor.",
     "budget": "3500"
-    },
-    {
+  },
+  {
     "tripname": "Scenic Train Journey in Switzerland",
     "description": "Embark on a picturesque train journey through the Swiss Alps, witnessing stunning mountain vistas.",
     "budget": "3000"
-    },
-    {
+  },
+  {
     "tripname": "Icelandic Adventure",
     "description": "Discover the otherworldly landscapes of Iceland, from geothermal hot springs to cascading waterfalls.",
     "budget": "4000"
-    },
-    {
+  },
+  {
     "tripname": "Amazon Rainforest Expedition",
     "description": "Explore the incredible biodiversity of the Amazon rainforest on an immersive expedition.",
     "budget": "5000"
-    },
-    {
+  },
+  {
     "tripname": "Cultural Discovery in Japan",
     "description": "Immerse yourself in traditional Japanese culture, from tea ceremonies to ancient temples.",
     "budget": "3500"
-    },
-    {
+  },
+  {
     "tripname": "Sailing the Greek Islands",
     "description": "Sail through the crystal-clear waters of the Greek Islands, visiting hidden coves and charming villages.",
     "budget": "4000"
-    },
-    {
+  },
+  {
     "tripname": "Wildlife Encounter in the Galapagos",
     "description": "Witness unique wildlife up close in the Galapagos Islands, a haven of biodiversity.",
     "budget": "5000"
-    },
-    {
+  },
+  {
     "tripname": "Cultural Heritage of Italy",
     "description": "Experience the art, history, and mouthwatering cuisine of Italy, from Rome to Florence to Venice.",
     "budget": "4500"
-    },
-    {
+  },
+  {
     "tripname": "Exploration of the Great Barrier Reef",
     "description": "Dive into the vibrant underwater world of the Great Barrier Reef, the largest coral reef system on Earth.",
     "budget": "4000"
-    },
-    {
+  },
+  {
     "tripname": "Serengeti Safari in Tanzania",
     "description": "Embark on a safari adventure in the vast plains of the Serengeti, home to the Great Migration.",
     "budget": "4500"
-    },
-    {
+  },
+  {
     "tripname": "City Break in Barcelona",
     "description": "Experience the vibrant culture, stunning architecture, and lively nightlife of Barcelona.",
     "budget": "2500"
-    },
-    {
+  },
+  {
     "tripname": "Cultural Journey through Southeast Asia",
     "description": "Explore the diverse cultures, ancient temples, and delicious street food of Southeast Asia.",
     "budget": "5000"
-    },
-    {
+  },
+  {
     "tripname": "Adventure in New Zealand",
     "description": "Embark on thrilling outdoor activities, such as bungee jumping and hiking, in the stunning landscapes of New Zealand.",
     "budget": "4000"
-    },
-    {
+  },
+  {
     "tripname": "Rooftop Views of Dubai",
     "description": "Experience the opulence and modern marvels of Dubai, including its iconic skyscrapers and luxurious hotels.",
     "budget": "3000"
-    },
-    {
+  },
+  {
     "tripname": "Cruise the Norwegian Fjords",
     "description": "Sail through the breathtaking Norwegian fjords, surrounded by majestic mountains and cascading waterfalls.",
     "budget": "4000"
-    },
-    {
+  },
+  {
     "tripname": "Exploring the Inca Trail",
     "description": "Embark on a challenging trek along the historic Inca Trail to the ancient city of Machu Picchu.",
     "budget": "3500"
-    },
-    {
+  },
+  {
     "tripname": "Cultural Delights of Morocco",
     "description": "Immerse yourself in the vibrant souks, flavorful cuisine, and rich history of Morocco.",
     "budget": "3000"
-    },
-    {
+  },
+  {
     "tripname": "Island Paradise in Seychelles",
     "description": "Unwind on pristine beaches and indulge in luxury resorts in the tropical paradise of Seychelles.",
     "budget": "6000"
-    },
-    {
+  },
+  {
     "tripname": "Cultural Highlights of China",
     "description": "Explore the ancient wonders, bustling cities, and diverse landscapes of China.",
     "budget": "4000"
-    },
-    {
+  },
+  {
     "tripname": "Wildlife Safari in Botswana",
     "description": "Encounter the incredible wildlife of Botswana's national parks and the Okavango Delta.",
     "budget": "5000"
-    },
-    {
+  },
+  {
     "tripname": "City of Dreams: Mumbai",
     "description": "Experience the vibrant energy, bustling markets, and Bollywood culture of Mumbai, India.",
     "budget": "2500"
-    },
-    {
+  },
+  {
     "tripname": "Cultural Immersion in Spain",
     "description": "Immerse yourself in the lively fiestas, rich history, and delicious cuisine of Spain.",
     "budget": "3000"
-    },
-    {
+  },
+  {
     "tripname": "Exploring the Temples of Angkor",
     "description": "Discover the ancient temples and intricate architecture of Angkor Wat in Cambodia.",
     "budget": "3500"
-    },
-    {
+  },
+  {
     "tripname": "Northern Lights in Norway",
     "description": "Chase the ethereal beauty of the Northern Lights in Norway's Arctic region.",
     "budget": "4000"
-    },
-    {
+  },
+  {
     "tripname": "Adventure in Patagonia",
     "description": "Hike through the stunning landscapes of Patagonia, including the famous Torres del Paine National Park.",
     "budget": "4500"
-    },
-    {
+  },
+  {
     "tripname": "Relaxation in the Maldives",
     "description": "Escape to the idyllic Maldives, where you can unwind on private beaches and indulge in spa treatments.",
     "budget": "6000"
-    },
-    {
+  },
+  {
     "tripname": "Cultural Heritage of Greece",
     "description": "Immerse yourself in ancient history, mythology, and Greek hospitality in Athens and beyond.",
     "budget": "3500"
-    },
-    {
+  },
+  {
     "tripname": "Awe-Inspiring Yosemite National Park",
     "description": "Discover the breathtaking beauty of Yosemite National Park, with its towering waterfalls and granite cliffs.",
     "budget": "3000"
-    },
-    {
+  },
+  {
     "tripname": "Safari in South Africa",
     "description": "Embark on a thrilling safari adventure in South Africa's renowned national parks, such as Kruger National Park.",
     "budget": "4500"
-    },
-    {
+  },
+  {
     "tripname": "Cultural Delights of Japan",
     "description": "Immerse yourself in traditional Japanese customs, stunning gardens, and delicious cuisine.",
     "budget": "4000"
-    },
-    {
+  },
+  {
     "tripname": "Cruise the Mediterranean",
     "description": "Sail through the azure waters of the Mediterranean, visiting picturesque ports and ancient ruins.",
     "budget": "5000"
-    },
-    {
+  },
+  {
     "tripname": "Exploring the Scottish Highlands",
     "description": "Discover the rugged beauty of the Scottish Highlands, with its misty lochs and historic castles.",
     "budget": "3500"
-    },
-    {
+  },
+  {
     "tripname": "City Break in Prague",
     "description": "Experience the fairytale charm, medieval architecture, and rich history of Prague.",
     "budget": "2500"
-    },
-    {
+  },
+  {
     "tripname": "Adventure in the Canadian Rockies",
     "description": "Explore the breathtaking landscapes of the Canadian Rockies, with its towering mountains and turquoise lakes.",
     "budget": "4000"
-    },
-    {
+  },
+  {
     "tripname": "Tropical Paradise in Fiji",
     "description": "Unwind on palm-fringed beaches, snorkel in crystal-clear waters, and experience the warm hospitality of Fiji.",
     "budget": "5000"
-    },
-    {
+  },
+  {
     "tripname": "Cultural Immersion in Vietnam",
     "description": "Immerse yourself in the rich history, vibrant markets, and delicious street food of Vietnam.",
     "budget": "3500"
-    },
-    {
+  },
+  {
     "tripname": "Exploration of the Scottish Isles",
     "description": "Visit the remote and picturesque Scottish Isles, including the Isle of Skye and the Outer Hebrides.",
     "budget": "4000"
-    },
-    {
+  },
+  {
     "tripname": "Wildlife Safari in Sri Lanka",
     "description": "Encounter diverse wildlife, from elephants to leopards, on a safari adventure in Sri Lanka.",
     "budget": "4500"
-    },
-    {
+  },
+  {
     "tripname": "Cultural Discovery of Peru",
     "description": "Immerse yourself in the ancient ruins of Peru, including Machu Picchu and the Sacred Valley.",
     "budget": "4000"
-    },
-    {
+  },
+  {
     "tripname": "Cruise the Alaskan Wilderness",
     "description": "Sail through the stunning fjords and glaciers of Alaska, spotting whales and bald eagles along the way.",
     "budget": "5000"
-    },
-    {
+  },
+  {
     "tripname": "Relaxation in the Caribbean",
     "description": "Unwind on pristine white-sand beaches, swim in turquoise waters, and enjoy island hospitality in the Caribbean.",
     "budget": "4000"
-    },
-    {
+  },
+  {
     "tripname": "Cultural Highlights of France",
     "description": "Experience the art, culture, and gastronomy of France, from the Louvre in Paris to the vineyards of Bordeaux.",
     "budget": "4500"
-    },
-    {
+  },
+  {
     "tripname": "City Break in Amsterdam",
     "description": "Discover the charming canals, historic architecture, and vibrant culture of Amsterdam.",
     "budget": "2500"
-    },
-    {
+  },
+  {
     "tripname": "Adventure in the Amazon",
     "description": "Explore the Amazon rainforest, encountering diverse wildlife and indigenous communities.",
     "budget": "4000"
-    },
-    {
+  },
+  {
     "tripname": "Cultural Immersion in Mexico",
     "description": "Immerse yourself in the rich history, colorful traditions, and delicious cuisine of Mexico.",
     "budget": "3500"
-    },
-    {
+  },
+  {
     "tripname": "Exploring the Cinque Terre",
     "description": "Discover the picturesque villages and stunning coastal landscapes of Italy's Cinque Terre.",
     "budget": "3000"
-    },
-    {
+  },
+  {
     "tripname": "Safari in Namibia",
     "description": "Embark on a unique safari adventure in Namibia, known for its vast deserts and diverse wildlife.",
     "budget": "4500"
-    },
-    {
+  },
+  {
     "tripname": "Island Hopping in Greece",
     "description": "Explore the beautiful Greek islands, hopping from one idyllic paradise to another.",
     "budget": "4000"
-    },
-    {
+  },
+  {
     "tripname": "Cultural Delights of Turkey",
     "description": "Immerse yourself in the rich history, vibrant bazaars, and delicious cuisine of Turkey.",
     "budget": "3500"
-    },
-    {
+  },
+  {
     "tripname": "Road Trip through the Scottish Highlands",
     "description": "Embark on a scenic road trip through the rugged landscapes and charming villages of the Scottish Highlands.",
     "budget": "4000"
-    },
-    {
+  },
+  {
     "tripname": "Luxury Retreat in the Maldives",
     "description": "Indulge in a luxurious getaway in the Maldives, staying in private overwater bungalows and enjoying world-class amenities.",
     "budget": "6000"
-    }
-    ]
+  },
+  {
+    "tripname": "Disneyland Resort",
+    "description": "Experience the magic of Disneyland Resort in Anaheim, California, with iconic attractions, thrilling rides, and beloved Disney characters. It's a perfect family destination for all ages.",
+    "budget": 500
+  },
+
+  {
+    "tripname": "Universal Studios Orlando",
+    "description": "Immerse yourself in the world of movies and entertainment at Universal Studios in Orlando, Florida. Enjoy thrilling rides, interactive experiences, and meet your favorite characters from popular films.",
+    "budget": 600
+  },
+
+  {
+    "tripname": "Epcot at Walt Disney World Resort",
+    "description": "Embark on a journey of discovery at Epcot in Walt Disney World Resort, Florida. Explore interactive exhibits, enjoy world-class cuisine, and witness amazing technological innovations.",
+    "budget": 700
+  },
+
+  {
+    "tripname": "Legoland Billund",
+    "description": "Visit Legoland in Billund, Denmark, where you can explore a world of colorful bricks, exciting rides, and imaginative attractions. It's a fantastic place for families with children.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Ocean Park Hong Kong",
+    "description": "Discover a world of thrilling rides, fascinating marine life, and mesmerizing shows at Ocean Park in Hong Kong. It offers a perfect blend of entertainment, education, and conservation.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Everland",
+    "description": "Experience the excitement of Everland in Yongin, South Korea. With thrilling roller coasters, beautiful gardens, and a zoo, it's a must-visit destination for family fun and adventure.",
+    "budget": 350
+  },
+
+  {
+    "tripname": "Warner Bros. Studio Tour London",
+    "description": "Step into the magical world of Harry Potter and other iconic films at the Warner Bros. Studio Tour in London, UK. Explore sets, see costumes, and learn about movie-making.",
+    "budget": 200
+  },
+
+  {
+    "tripname": "Tokyo Disneyland",
+    "description": "Enter a world of enchantment and fantasy at Tokyo Disneyland in Japan. Enjoy classic Disney attractions, meet beloved characters, and witness spectacular parades and fireworks.",
+    "budget": 600
+  },
+
+  {
+    "tripname": "SeaWorld Orlando",
+    "description": "Dive into an ocean of excitement at SeaWorld in Orlando, Florida. Interact with marine life, enjoy thrilling rides, and witness captivating animal shows and performances.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Busch Gardens Tampa Bay",
+    "description": "Embark on a wild adventure at Busch Gardens in Tampa Bay, Florida. Experience thrilling roller coasters, encounter exotic animals, and enjoy entertaining shows.",
+    "budget": 350
+  },
+
+  {
+    "tripname": "Six Flags Magic Mountain",
+    "description": "Get your adrenaline pumping at Six Flags Magic Mountain in Los Angeles, California. It's home to some of the world's most thrilling roller coasters and exhilarating attractions.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Alton Towers",
+    "description": "Experience excitement and adventure at Alton Towers in Staffordshire, UK. With thrilling rides, water attractions, and beautiful gardens, it offers fun for the whole family.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Europa-Park",
+    "description": "Explore the largest theme park in Germany, Europa-Park in Rust. It features thrilling rides, themed areas representing different European countries, and enchanting shows.",
+    "budget": 500
+  },
+
+  {
+    "tripname": "Phantasialand",
+    "description": "Immerse yourself in a world of fantasy and adventure at Phantasialand in Brühl, Germany. Enjoy thrilling rides, impressive shows, and beautifully themed areas.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Universal Studios Hollywood",
+    "description": "Experience the magic of movies at Universal Studios Hollywood in Los Angeles, California. Enjoy thrilling rides, behind-the-scenes tours, and live entertainment.",
+    "budget": 500
+  },
+
+  {
+    "tripname": "Hersheypark",
+    "description": "Visit Hersheypark in Hershey, Pennsylvania, for a sweet and exciting adventure. Enjoy thrilling rides, chocolate-themed attractions, and live entertainment.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Cedar Point",
+    "description": "Experience the roller coaster capital of the world at Cedar Point in Sandusky, Ohio. It's home to some of the tallest and fastest coasters, along with family-friendly attractions.",
+    "budget": 450
+  },
+
+  {
+    "tripname": "PortAventura World",
+    "description": "Discover an exciting world of fun and adventure at PortAventura in Salou, Spain. With thrilling rides, a water park, and live shows, it's a great family destination.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Aquaventure Waterpark",
+    "description": "Dive into a world of aquatic fun at Aquaventure Waterpark in Dubai, UAE. Enjoy thrilling water slides, lazy rivers, and even swim with dolphins.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Schlitterbahn Waterpark",
+    "description": "Cool off and have a splashing good time at Schlitterbahn Waterpark in New Braunfels, Texas. It features thrilling water slides, wave pools, and relaxing lazy rivers.",
+    "budget": 250
+  },
+
+  {
+    "tripname": "Typhoon Lagoon",
+    "description": "Escape to a tropical paradise at Typhoon Lagoon in Walt Disney World Resort, Florida. Enjoy water slides, a giant wave pool, and a lazy river for relaxation.",
+    "budget": 350
+  },
+
+  {
+    "tripname": "Blizzard Beach",
+    "description": "Experience a wintry wonderland in the heart of Florida at Blizzard Beach in Walt Disney World Resort. Slide down ice-themed water slides and enjoy a snow-capped adventure.",
+    "budget": 350
+  },
+
+  {
+    "tripname": "Volcano Bay",
+    "description": "Immerse yourself in a tropical paradise at Volcano Bay in Universal Orlando Resort, Florida. Enjoy thrilling water slides, a lazy river, and a towering volcano centerpiece.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Wet 'n' Wild",
+    "description": "Beat the heat and have a splashing good time at Wet 'n' Wild water park in various locations worldwide. Enjoy a variety of water slides, wave pools, and family-friendly attractions.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Raging Waters",
+    "description": "Experience thrilling water slides and aquatic adventures at Raging Waters in various locations across the United States. It's a great place for family fun and excitement.",
+    "budget": 250
+  },
+
+  {
+    "tripname": "Water Country USA",
+    "description": "Escape the summer heat and enjoy a day of water-filled fun at Water Country USA in Williamsburg, Virginia. Experience water slides, wave pools, and lazy rivers.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Aquatica Orlando",
+    "description": "Dive into a world of aquatic adventure at Aquatica in Orlando, Florida. Experience thrilling water slides, encounter marine life, and relax in beautiful beach areas.",
+    "budget": 350
+  },
+
+  {
+    "tripname": "Noah's Ark Waterpark",
+    "description": "Enjoy a day of family fun at Noah's Ark Waterpark in Wisconsin Dells, Wisconsin. It offers a wide variety of water slides, wave pools, and interactive water play areas.",
+    "budget": 250
+  },
+
+  {
+    "tripname": "Splashin' Safari",
+    "description": "Visit Splashin' Safari in Santa Claus, Indiana, for a day of wet and wild adventures. Experience thrilling water slides, lazy rivers, and a massive wave pool.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Dollywood",
+    "description": "Explore the beauty of the Smoky Mountains and enjoy thrilling rides at Dollywood in Pigeon Forge, Tennessee. It's a perfect blend of nature and family-friendly entertainment.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Kings Island",
+    "description": "Experience the thrills and excitement at Kings Island in Mason, Ohio. It features world-class roller coasters, family rides, and live entertainment for all ages.",
+    "budget": 350
+  },
+
+  {
+    "tripname": "Knott's Berry Farm",
+    "description": "Enjoy a day of family fun and thrilling rides at Knott's Berry Farm in Buena Park, California. It offers roller coasters, water rides, and live entertainment.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Hershey's Chocolate World",
+    "description": "Discover the world of chocolate at Hershey's Chocolate World in Hershey, Pennsylvania. Take a chocolate factory tour, create your own candy bar, and enjoy sweet attractions.",
+    "budget": 200
+  },
+
+  {
+    "tripname": "Sesame Place",
+    "description": "Meet your favorite Sesame Street characters and enjoy family-friendly attractions at Sesame Place in Langhorne, Pennsylvania. It's a perfect destination for young children.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Busch Gardens Williamsburg",
+    "description": "Experience thrilling roller coasters and encounter exotic animals at Busch Gardens in Williamsburg, Virginia. It offers a unique blend of entertainment and natural beauty.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Silver Dollar City",
+    "description": "Step back in time and enjoy the charm of the 19th century at Silver Dollar City in Branson, Missouri. It offers thrilling rides, live entertainment, and craft demonstrations.",
+    "budget": 350
+  },
+
+  {
+    "tripname": "Adventure Island",
+    "description": "Cool off and have a splashing good time at Adventure Island water park in Tampa, Florida. It features water slides, lazy rivers, and plenty of sun-soaked fun.",
+    "budget": 250
+  },
+
+  {
+    "tripname": "Schlitterbahn Waterpark Resort",
+    "description": "Escape to Schlitterbahn Waterpark Resort in New Braunfels, Texas, for a fun-filled family getaway. Enjoy thrilling water rides, relaxing pools, and beautiful riverfront views.",
+    "budget": 350
+  },
+
+  {
+    "tripname": "Holiday World & Splashin' Safari",
+    "description": "Experience thrilling rides and refreshing water attractions at Holiday World & Splashin' Safari in Santa Claus, Indiana. It offers a mix of excitement and relaxation for the whole family.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Legoland California Resort",
+    "description": "Visit Legoland California Resort in Carlsbad, California, for a day of brick-filled adventure. Enjoy Lego-themed rides, interactive attractions, and impressive Lego creations.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Legoland Florida Resort",
+    "description": "Immerse yourself in the world of Lego at Legoland Florida Resort in Winter Haven, Florida. Enjoy Lego-themed rides, water attractions, and a Lego-themed hotel.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Legoland Windsor Resort",
+    "description": "Embark on a Lego-filled adventure at Legoland Windsor Resort in Windsor, UK. Experience Lego-themed rides, shows, and explore famous landmarks made of Lego bricks.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Lotte World",
+    "description": "Discover a world of indoor and outdoor entertainment at Lotte World in Seoul, South Korea. Enjoy thrilling rides, a water park, and a magical ice rink.",
+    "budget": 350
+  },
+
+  {
+    "tripname": "Aquaventure Atlantis, The Palm",
+    "description": "Experience the ultimate water adventure at Aquaventure in Atlantis, The Palm, Dubai. Enjoy record-breaking water slides, a lazy river, and an underwater aquarium.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Adventure Aquarium",
+    "description": "Dive into an underwater world at Adventure Aquarium in Camden, New Jersey. Explore fascinating exhibits, encounter marine life, and even touch sharks and stingrays.",
+    "budget": 250
+  },
+
+  {
+    "tripname": "Great Wolf Lodge",
+    "description": "Enjoy a family-friendly getaway at Great Wolf Lodge, with locations across North America. Experience indoor water parks, interactive games, and comfortable accommodations.",
+    "budget": 500
+  },
+
+  {
+    "tripname": "Luna Park Sydney",
+    "description": "Have a day of family fun at Luna Park in Sydney, Australia. Enjoy thrilling rides, carnival games, and stunning views of Sydney Harbour.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Wet'n'Wild Sydney",
+    "description": "Beat the heat and enjoy a day of water fun at Wet'n'Wild in Sydney, Australia. It features water slides, wave pools, and a relaxing lazy river.",
+    "budget": 250
+  },
+
+  {
+    "tripname": "Paultons Park",
+    "description": "Explore Paultons Park in Romsey, UK, and enter a world of fun and adventure. Enjoy thrilling rides, meet Peppa Pig and her friends, and discover beautiful gardens.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Yas Waterworld",
+    "description": "Escape the heat and dive into a world of water-based fun at Yas Waterworld in Abu Dhabi, UAE. Experience thrilling water slides, wave pools, and a unique Emirati theme.",
+    "budget": 350
+  },
+
+  {
+    "tripname": "Disney's Animal Kingdom",
+    "description": "Embark on a safari adventure at Disney's Animal Kingdom in Walt Disney World Resort, Florida. Explore animal exhibits, enjoy thrilling rides, and watch captivating shows.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Disney's Hollywood Studios",
+    "description": "Step into the world of movies and entertainment at Disney's Hollywood Studios in Walt Disney World Resort, Florida. Experience thrilling rides and shows inspired by beloved films.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Disney California Adventure Park",
+    "description": "Discover the magic of Disney and the spirit of California at Disney California Adventure Park in Anaheim, California. Enjoy thrilling rides, entertainment, and delicious cuisine.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Disney's Typhoon Lagoon",
+    "description": "Escape to a tropical paradise at Disney's Typhoon Lagoon water park in Walt Disney World Resort, Florida. Enjoy water slides, a wave pool, and a lazy river.",
+    "budget": 350
+  },
+
+  {
+    "tripname": "Disney's Blizzard Beach",
+    "description": "Experience a frosty wonderland at Disney's Blizzard Beach water park in Walt Disney World Resort, Florida. Enjoy snow-themed water slides and a relaxing polar river.",
+    "budget": 350
+  },
+
+  {
+    "tripname": "Disney's Magic Kingdom",
+    "description": "Enter a world of enchantment at Disney's Magic Kingdom in Walt Disney World Resort, Florida. Experience classic Disney attractions, meet beloved characters, and enjoy fireworks.",
+    "budget": 450
+  },
+
+  {
+    "tripname": "Disney's Epcot",
+    "description": "Embark on a global journey at Disney's Epcot in Walt Disney World Resort, Florida. Explore technological innovations, enjoy international cuisine, and experience thrilling rides.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Disney's Animal Kingdom Lodge",
+    "description": "Immerse yourself in the African savannah at Disney's Animal Kingdom Lodge in Walt Disney World Resort, Florida. Stay in a unique resort and observe exotic animals.",
+    "budget": 500
+  },
+
+  {
+    "tripname": "Disney's Art of Animation Resort",
+    "description": "Step into the world of Disney animation at Disney's Art of Animation Resort in Walt Disney World Resort, Florida. Stay in themed suites inspired by popular Disney films.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Disney's Caribbean Beach Resort",
+    "description": "Experience the tropical charm of the Caribbean at Disney's Caribbean Beach Resort in Walt Disney World Resort, Florida. Stay in vibrant island-themed accommodations.",
+    "budget": 350
+  },
+
+  {
+    "tripname": "Disney's Pop Century Resort",
+    "description": "Travel through time and experience the nostalgia of the 20th century at Disney's Pop Century Resort in Walt Disney World Resort, Florida. Stay in themed rooms and enjoy retro fun.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Disneyland Paris",
+    "description": "Experience the magic of Disney at Disneyland Paris in Marne-la-Vallee, France. Enjoy thrilling rides, meet beloved characters, and immerse yourself in fairy-tale enchantment.",
+    "budget": 500
+  },
+
+  {
+    "tripname": "Thorpe Park",
+    "description": "Get your adrenaline pumping at Thorpe Park in Chertsey, UK. It offers thrilling roller coasters, immersive horror experiences, and live entertainment.",
+    "budget": 350
+  },
+
+  {
+    "tripname": "Alton Towers Resort",
+    "description": "Experience thrills and adventure at Alton Towers Resort in Staffordshire, UK. It features thrilling roller coasters, a water park, and beautiful gardens.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Chessington World of Adventures Resort",
+    "description": "Enjoy a day of family fun at Chessington World of Adventures Resort in Chessington, UK. It offers thrilling rides, a zoo, and a SEA LIFE aquarium.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Legoland Deutschland Resort",
+    "description": "Embark on a brick-filled adventure at Legoland Deutschland Resort in Günzburg, Germany. Enjoy Lego-themed rides, water attractions, and explore Miniland.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Plopsaland De Panne",
+    "description": "Visit Plopsaland De Panne in De Panne, Belgium, for a day of family-friendly fun. It features themed rides, live shows, and beloved characters from popular children's TV shows.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "PortAventura Park",
+    "description": "Discover the thrills and excitement at PortAventura Park in Salou, Spain. It offers thrilling rides, live shows, and immersive themed areas.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Tivoli Gardens",
+    "description": "Experience the charm of Tivoli Gardens in Copenhagen, Denmark. It features beautiful gardens, thrilling rides, live performances, and a festive atmosphere.",
+    "budget": 350
+  },
+
+  {
+    "tripname": "Liseberg",
+    "description": "Have a day of fun and excitement at Liseberg in Gothenburg, Sweden. It offers thrilling rides, entertaining shows, and beautiful gardens.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Gardaland",
+    "description": "Experience the magic of Gardaland in Castelnuovo del Garda, Italy. It offers thrilling rides, live shows, and a fantastic underwater-themed area.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Europa-Park",
+    "description": "Explore the largest theme park in Germany, Europa-Park in Rust. It features thrilling rides, themed areas representing different European countries, and enchanting shows.",
+    "budget": 500
+  },
+
+  {
+    "tripname": "Phantasialand",
+    "description": "Immerse yourself in a world of fantasy and adventure at Phantasialand in Brühl, Germany. Enjoy thrilling rides, impressive shows, and beautifully themed areas.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Universal Studios Hollywood",
+    "description": "Experience the magic of movies at Universal Studios Hollywood in Los Angeles, California. Enjoy thrilling rides, behind-the-scenes tours, and live entertainment.",
+    "budget": 500
+  },
+
+  {
+    "tripname": "Hersheypark",
+    "description": "Indulge in chocolate-filled fun at Hersheypark in Hershey, Pennsylvania. Enjoy thrilling rides, chocolate-themed attractions, and delicious Hershey's treats.",
+    "budget": 350
+  },
+
+  {
+    "tripname": "Six Flags Magic Mountain",
+    "description": "Get your adrenaline fix at Six Flags Magic Mountain in Valencia, California. It offers a thrilling collection of roller coasters and other exciting rides.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Universal Orlando Resort",
+    "description": "Experience the magic of movies at Universal Orlando Resort in Orlando, Florida. Enjoy thrilling rides, explore The Wizarding World of Harry Potter, and much more.",
+    "budget": 500
+  },
+
+  {
+    "tripname": "SeaWorld Orlando",
+    "description": "Dive into a world of marine adventure at SeaWorld Orlando in Orlando, Florida. Encounter marine life, enjoy thrilling rides, and watch captivating shows.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "SeaWorld San Diego",
+    "description": "Discover the wonders of the ocean at SeaWorld San Diego in San Diego, California. Encounter marine life, enjoy thrilling rides, and learn about conservation.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Six Flags Great Adventure",
+    "description": "Get ready for a day of excitement at Six Flags Great Adventure in Jackson, New Jersey. It offers thrilling roller coasters, water rides, and live entertainment.",
+    "budget": 400
+  },
+
+  {
+    "tripname": "Warner Bros. Studio Tour London",
+    "description": "Go behind the scenes of the Harry Potter films at Warner Bros. Studio Tour London in Leavesden, UK. Explore iconic sets and see authentic props and costumes.",
+    "budget": 350
+  },
+
+  {
+    "tripname": "Warner Bros. Studio Tour Hollywood",
+    "description": "Embark on a journey through the world of movies at Warner Bros. Studio Tour Hollywood in Burbank, California. Explore iconic sets and learn about filmmaking.",
+    "budget": 350
+  },
+
+  {
+    "tripname": "San Diego Zoo",
+    "description": "Visit the world-famous San Diego Zoo in San Diego, California, and explore its diverse collection of animals from around the globe.",
+    "budget": 250
+  },
+
+  {
+    "tripname": "San Diego Zoo Safari Park",
+    "description": "Embark on an African safari adventure at the San Diego Zoo Safari Park in Escondido, California. Encounter exotic animals and enjoy exciting safari experiences.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Australia Zoo",
+    "description": "Discover the wonders of Australian wildlife at Australia Zoo in Beerwah, Queensland. Get up close to koalas, kangaroos, crocodiles, and more.",
+    "budget": 250
+  },
+
+  {
+    "tripname": "Cincinnati Zoo & Botanical Garden",
+    "description": "Explore the beauty of nature and encounter a variety of animals at the Cincinnati Zoo & Botanical Garden in Cincinnati, Ohio.",
+    "budget": 250
+  },
+
+  {
+    "tripname": "Taronga Zoo",
+    "description": "Enjoy breathtaking views of Sydney Harbour and encounter a wide array of animals at Taronga Zoo in Sydney, Australia.",
+    "budget": 250
+  },
+
+  {
+    "tripname": "Monterey Bay Aquarium",
+    "description": "Immerse yourself in the wonders of the ocean at the Monterey Bay Aquarium in Monterey, California. Explore fascinating exhibits and see marine life up close.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Georgia Aquarium",
+    "description": "Dive into an underwater adventure at the Georgia Aquarium in Atlanta, Georgia. Encounter a diverse range of marine life and enjoy captivating exhibits.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Aquarium of the Pacific",
+    "description": "Explore the wonders of the Pacific Ocean at the Aquarium of the Pacific in Long Beach, California. Encounter marine life from the Pacific Rim.",
+    "budget": 250
+  },
+
+  {
+    "tripname": "National Aquarium",
+    "description": "Visit the National Aquarium in Baltimore, Maryland, and discover a world of aquatic wonders. Encounter a variety of marine life in impressive exhibits.",
+    "budget": 250
+  },
+
+  {
+    "tripname": "Museum of Science and Industry",
+    "description": "Engage in interactive exhibits and explore the world of science at the Museum of Science and Industry in Chicago, Illinois.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Exploratorium",
+    "description": "Unleash your curiosity at the Exploratorium in San Francisco, California. It offers interactive exhibits and hands-on experiments for all ages.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Smithsonian National Air and Space Museum",
+    "description": "Discover the wonders of aviation and space exploration at the Smithsonian National Air and Space Museum in Washington, D.C.",
+    "budget": 250
+  },
+
+  {
+    "tripname": "British Museum",
+    "description": "Immerse yourself in world history and culture at the British Museum in London, UK. Explore its vast collection of artifacts and treasures.",
+    "budget": 250
+  },
+
+  {
+    "tripname": "Louvre Museum",
+    "description": "Experience the grandeur of art and history at the Louvre Museum in Paris, France. Discover iconic masterpieces, including the Mona Lisa.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Metropolitan Museum of Art",
+    "description": "Step into an artistic paradise at the Metropolitan Museum of Art in New York City. Explore its vast collection spanning thousands of years.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "Museum of Modern Art (MoMA)",
+    "description": "Delve into the world of contemporary art at the Museum of Modern Art (MoMA) in New York City. Experience innovative and thought-provoking exhibits.",
+    "budget": 300
+  },
+
+  {
+    "tripname": "National Gallery of Art",
+    "description": "Appreciate masterpieces of art at the National Gallery of Art in Washington, D.C. Explore a diverse collection from various artistic periods.",
+    "budget": 250
+  },
+
+  {
+    "tripname": "Tate Modern",
+    "description": "Immerse yourself in contemporary art at Tate Modern in London, UK. Explore thought-provoking exhibits and enjoy stunning views from its viewing terrace.",
+    "budget": 250
+  }
+]

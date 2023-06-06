@@ -44,6 +44,7 @@ router.get("/stories", async (req, res) => {
           attributes: ["name"],
         },
       ],
+      order: [["id", "DESC"]],
     });
 
     // Serialize data so the template can read it
@@ -177,8 +178,6 @@ router.get("/api/trips/search", async (req, res) => {
         },
       },
     });
-
-    console.log("Search results:", trips);
 
     res.json(trips);
   } catch (error) {

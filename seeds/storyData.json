@@ -1,20 +1,30 @@
 [
   {
-    "name": "Auckland, New Zealand",
-    "blog": "The burgers here isn't a gimmick, it's real organ and you can test the flavor. One of the most relaxing places to visit and being able to experience the ports while enjoying top tier 5-stars restaurants is a must-do!",
-    "budget": 5000,
-    "story_id": 1
-  },
-  {
     "name": "Honolulu, Hawaii",
     "blog": "What is there to say? This is Hawaii, one of the best places to enjoy life and have fun. The trip is worth it and being able to visit volcanos is always a plus.",
     "budget": 2000,
-    "story_id": 2
+    "story_id": 3,
+    "user_id": 3
+  },
+  {
+    "name": "Antartica",
+    "blog": "Yea, this place is too cold. Dad made me go, otherwise, I would of rather stay in bed. Can't complain I guess... The seafood shop was nice though!",
+    "budget": 800,
+    "story_id": 1,
+    "user_id": 1
   },
   {
     "name": "Virginia Beach, Virginia",
     "blog": "Amazing stores and beachfront to explore during our visits! Being able to enjoy the walk-way and attractions at night during holidays becomes very entertaining.",
-    "budget": 800,
-    "story_id": 3
+    "budget": 200,
+    "story_id": 2,
+    "user_id": 2
+  },
+  {
+    "name": "Auckland, New Zealand",
+    "blog": "The burgers here isn't a gimmick, it's real organ and you can test the flavor. One of the most relaxing places to visit and being able to experience the ports while enjoying top tier 5-stars restaurants is a must-do!",
+    "budget": 5000,
+    "story_id": 4,
+    "user_id": 4
   }
 ]

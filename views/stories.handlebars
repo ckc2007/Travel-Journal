@@ -1,31 +1,25 @@
 <h2 class="text-3xl font-bold pt-10 ml-8 text-black">Stories</h2>
 <div class="h-1 bg-gray-300 w-55 mt-2 pl-4 ml-8"></div>
 <div class="p-4 flex-col flex ml-2">
+
 {{#each stories as |story|}}
-  <div class="row mb-4 project border border-gray-400 shadow-lg rounded-lg hover:scale-105 ml-2 mr-8">
+<div class="row mb-4 project border border-gray-400 shadow-lg rounded-lg hover:scale-105 ml-2 mr-8 relative">
+  <div class="bg-transparent rounded-md w-50 h-20 z-0" style="background-image: url('/imgs/placeholder.jpg');">
     <div class="col-md-5 flex justify-between">
-      <h2 class="text-2xl font-semibold py-2 px-4">
-        <a href="/stories/{{story.id}}" class="text-blue-500 hover:underline">{{story.name}}</a>
-      </h2>
-      {{! added image display section }}
-      {{#if story.images}}
-        <div class="image-container">
-          {{#each story.images}}
-            <a href="/images/{{this}}" target="_blank">
-              <img src="/images/{{this}}" alt="Story Image" class="gallery-image hover:outline-blue-500 hover:transform hover:scale-105 transition ease-in-out duration-300" />
-            </a>
-          {{/each}}
-        </div>
-      {{/if}}
-      <p class="text-sm mr-4 ">
-        By {{story.user.name}} on {{format_date story.date_created}}
-      </p>
+        <h2 class="text-2xl font-semibold py-2 px-4 text-blue-800">
+          <a href="/stories/{{story.id}}" class="hover:underline">{{story.name}}</a>
+        </h2>
+        <p class="text-sm font-semibold mr-4">
+          By {{story.user.name}} on {{format_date story.date_created}}
+        </p>
     </div>
     <div class="col-md-7">
-      <p class="text-lg py-2 px-4">
-        {{story.blog}}
-      </p>
+        <p class="text-lg py-2 px-4 font-semibold">
+          {{story.blog}}
+        </p>
     </div>
   </div>
+</div>
 {{/each}}
+
 </div>

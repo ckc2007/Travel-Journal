@@ -8,7 +8,6 @@ const searchTripPlanner = async (event) => {
       try {
         const response = await fetch(`/api/trips/search?term=${searchTerm}`);
         const tripData = await response.json();
-        console.log("Search results:", tripData);
   
         const searchResults = document.getElementById("search-results");
         searchResults.innerHTML = '';
@@ -16,9 +15,13 @@ const searchTripPlanner = async (event) => {
         tripData.forEach((trip) => {
           const tripElement = document.createElement("div");
           tripElement.innerHTML = `
-            <h3>${trip.tripname}</h3>
+            <div class="border border-gray-500 flex-col flex rounded-md shadow-md ml-4 justify-between mr-20 p-2 mb-4">
+            <div class="flex justify-between">
+            <h1 class="text-xl text-5x1 font-semibold text-blue-900 amatic">${trip.tripname}</h1>
+            <p class="mr-4 text-green-900">$${trip.budget}</p>
+            </div>
             <p>${trip.description}</p>
-            <p>Budget: ${trip.budget}</p>
+            </div>
           `;
           searchResults.appendChild(tripElement);
         });
