@@ -2,9 +2,9 @@ const router = require("express").Router();
 const { Story } = require("../../models/Story");
 const withAuth = require("../../utils/auth");
 const upload = require("../../utils/upload");
-const fs = require('fs');
-const path = require('path');
-
+const fs = require("fs");
+const path = require("path");
+const Trip = require("../../models/Trip");
 
 //POST request to create new story
 router.post("/", upload, withAuth, async (req, res) => {
@@ -15,10 +15,17 @@ router.post("/", upload, withAuth, async (req, res) => {
       images: JSON.stringify(filenames),
       user_id: req.session.user_id,
     });
+    // experimental feature: live-update
+    const newTrip = await Trip.create({
+      tripname: req.body.name,
+      budget: req.body.budget,
+      description: req.body.blog,
+      user_id: req.session.user_id,
+    });
 
     console.log("Associated images created:", filenames);
 
-    res.status(200).json(newStory);
+    res.status(200).json({ newStory, newTrip });
   } catch (err) {
     console.log(err);
     res.status(400).json(err);
@@ -46,7 +53,6 @@ router.post("/", upload, withAuth, async (req, res) => {
 //   }
 // });
 
-
 router.delete("/:id", withAuth, async (req, res) => {
   try {
     const storyData = await Story.findOne({
@@ -71,7 +77,7 @@ router.delete("/:id", withAuth, async (req, res) => {
     });
 
     if (imageFilename) {
-      const filePath = path.join('public/images', imageFilename);
+      const filePath = path.join("public/images", imageFilename);
       // Check if the file exists
       if (fs.existsSync(filePath)) {
         fs.unlinkSync(filePath);
