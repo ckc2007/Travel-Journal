@@ -6,9 +6,9 @@ A travel journal app that saves your favorite travel memories. Add points of int
 
 ## Description
 
-- This application is designed to orgnaize your points of interest so that you can access all your travel information in one place. Save photos, reviews, memories and even keep track of a travel budget. Users can also get travel ideas by checking out other travelers' stories and adding comments to places they find interesting.
+- This application is designed to organize your points of interest so that you can access all your travel information in one place. Save photos, reviews, memories and even keep track of a travel budget. Users can also get travel ideas by checking out other travelers' stories and adding comments to places they find interesting.
 - Help keep your most relevant travel data organized. Find photos, reviews, budgeting, and location data all in one place.
-- We often forget to keep track of our travel memories, and when its time to share them with others, we don't have all the information we need to give a complete picture of the activities we did or the things we saw. This applicaiton keeps track of relevant details in a simple format so you can easily track your budget and share memories. it allows you to create a "story" so that your travel interests can be accessed whenever you want to revist them, share them or plan new trips.
+- We often forget to keep track of our travel memories, and when it's time to share them with others, we don't have all the information we need to give a complete picture of the activities we did or the things we saw. This applicaiton keeps track of relevant details in a simple format so you can easily track your budget and share memories. it allows you to create a "story" so that your travel interests can be accessed whenever you want to revist them, share them or plan new trips.
 - The developers learned the value of keeping a well-organized data base, data model structure and security features.
 
 ## Table Of Contents
@@ -23,6 +23,7 @@ A travel journal app that saves your favorite travel memories. Add points of int
 
 ## Installation
 
+- If you want to run this from the console:
 - We use mysql to manage our database, so the user will need to first initiate the database in their system using the command "mysql", followed by "source schema.sql;" to create the database in their system locally.
 - Please install all required dependencies to run this from your console: "npm i" >> then "npm start" to initialize the server.
 
@@ -36,7 +37,11 @@ A travel journal app that saves your favorite travel memories. Add points of int
 
 ## Screenshot / Video
 
-![screenshot](./assets/images/)
+![Home Screen](./assets/images/images-top.png)
+![Profile](./assets/images/profile-with-add.png)
+![Stories](./assets/images/stories.png)
+![Home Screen](./assets/images/trip-search.png)
+
 ![video](./assets/images/)
 
 ## Contributing
