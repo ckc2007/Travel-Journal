@@ -4,6 +4,7 @@ const withAuth = require("../../utils/auth");
 const upload = require("../../utils/upload");
 const fs = require("fs");
 const path = require("path");
+const Trip = require("../../models/Trip");
 
 //POST request to create new story
 router.post("/", upload, withAuth, async (req, res) => {
@@ -15,7 +16,15 @@ router.post("/", upload, withAuth, async (req, res) => {
       user_id: req.session.user_id,
     });
 
-    res.status(200).json(newStory);
+    // experimental feature: live-update
+    const newTrip = await Trip.create({
+      tripname: req.body.name,
+      budget: req.body.budget,
+      description: req.body.blog,
+      user_id: req.session.user_id,
+    });
+
+    res.status(200).json({newStory, newTrip});
   } catch (err) {
     console.log(err);
     res.status(400).json(err);
