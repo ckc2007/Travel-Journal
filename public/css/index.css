@@ -4,6 +4,28 @@
   font-family: "Raleway", sans-serif;
 }
 
+header h1 {
+  font-family: 'Amatic SC', cursive;
+}
+
+.image-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+.image-container a {
+  display: inline-block !important;
+  width: 200px !important;
+  height: 200px !important;
+  margin: 5px !important;
+}
+
+.image-container img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
 .hero {
   background: url("../imgs/beach-bg.jpg") no-repeat;
   height: 500px;
@@ -11,39 +33,37 @@
 }
 
 .floating-sub-hero {
-    bottom: -7%;
-    left: 10%;
+  bottom: -7%;
+  left: 10%;
 }
 
 .text-xxs {
-      font-size: 9px;
+  font-size: 9px;
 }
 .dollar-sign {
-      top: 11px;
-      left: 11px;
+  top: 11px;
+  left: 11px;
 }
 .fill-blue {
-      fill: #3182ce;
+  fill: #3182ce;
 }
 
 img {
-      max-width: 100%;
-      max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 .tour-card .image-section {
-      width: 200px;
-      height: 250px;
+  width: 200px;
+  height: 250px;
 }
 
-.slideshow .card {
-      width: 24%;
-      height: 300px;
-    }
-    .slideshow .card .overlay-text{
-      bottom: 20px;
-    }
-    .slideshow .card img{
-      object-fit: cover;
-      width: 100%;
-      filter: brightness(50%);
-    }
+.project {
+  overflow: hidden;
+}
+
+.project h2,
+.project p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
