@@ -11,7 +11,7 @@
     on
     {{format_date date_created}}</p>
 
-  {{#if images}}
+  {{!-- {{#if images}}
     <div class="grid grid-cols-3 gap-4 mt-8 mx-8">
       {{#each images}}
         <a href="/images/{{this}}" target="_blank">
@@ -25,8 +25,36 @@
         </a>
       {{/each}}
     </div>
-  {{/if}}
+  {{/if}} --}}
 </div>
+
+
+<div>
+  {{#if images}}
+  <section class="flex justify-center items-center px-6 mt-4">
+   <!-- category card -->
+   {{#each images}}
+    <a href="/images/{{this}}" target="_blank">
+      <div class="card relative border rounded-md border-gray-400">
+        <img src="/images/{{this}}" alt="story image" class="w-64 h-64 rounded hover:scale-105 hover:cursor-pointer" />
+      </div>
+    </a>
+    {{/each}}
+  </section>
+  {{/if}}
+
+  <section class="mt-16">
+        <!-- slide indicators -->
+        <div class="flex mx-auto justify-center">
+          <div class="h-1 w-10 bg-gray-400 mr-4"></div>
+          <div class="h-1 w-10 bg-gray-400 mr-4"></div>
+          <div class="h-1 w-10 bg-blue-600 mr-4"></div>
+          <div class="h-1 w-10 bg-gray-400"></div>
+        </div>
+  </section>
+</div>
+
+
 
 <div class="comment-container">
   <div class="w-full bg-white rounded-lg border p-2 my-4 mx-6 shadow-md">
@@ -77,50 +105,3 @@
 <link rel="stylesheet" href="/css/comments.css" />
 <link rel="stylesheet" href="/css/index.css" />
 <script src="/js/story.js"></script>
-
-
-
-
-
-
-
-<div>
-  <section class="flex slideshow justify-center items-center px-6 mt-4">
-   
-   
-    <!-- category card -->
-    <div class="card relative">
-      <img src="/imgs/beach-seats.jpg" alt="" />
-      <div class="absolute overlay-text w-full flex flex-col items-center">
-        <p class="text-white text-xl tracking-tight">Waterfall</p>
-        <p class="text-xs text-gray-500 font-semibold uppercase mt-1">
-          43 Adventures
-        </p>
-      </div>
-    </div>
-    
-<!-- category card -->
-    <div class="card relative">
-      <img src="/imgs/beach-boy.jpg" alt="" />
-      <div class="absolute overlay-text w-full flex flex-col items-center">
-        <p class="text-white text-xl tracking-tight">Lake</p>
-        <p class="text-xs text-gray-500 font-semibold uppercase mt-1">
-          43 Adventures
-        </p>
-      </div>
-    </div>
-
-  </section>
-  <section class="mt-16">
-        <!-- slide indicators -->
-        <div class="flex mx-auto justify-center">
-          <div class="h-1 w-10 bg-gray-400 mr-4"></div>
-          <div class="h-1 w-10 bg-gray-400 mr-4"></div>
-          <div class="h-1 w-10 bg-blue-600 mr-4"></div>
-          <div class="h-1 w-10 bg-gray-400 mr-4"></div>
-          <div class="h-1 w-10 bg-gray-400"></div>
-        </div>
-  </section>
-</div>
-
-<script src="/js/glide.js"></script>
