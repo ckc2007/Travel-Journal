@@ -4,7 +4,6 @@ const withAuth = require("../../utils/auth");
 const upload = require("../../utils/upload");
 const fs = require("fs");
 const path = require("path");
-const Trip = require("../../models/Trip");
 
 //POST request to create new story
 router.post("/", upload, withAuth, async (req, res) => {
@@ -15,17 +14,8 @@ router.post("/", upload, withAuth, async (req, res) => {
       images: JSON.stringify(filenames),
       user_id: req.session.user_id,
     });
-    // experimental feature: live-update
-    const newTrip = await Trip.create({
-      tripname: req.body.name,
-      budget: req.body.budget,
-      description: req.body.blog,
-      user_id: req.session.user_id,
-    });
 
-    console.log("Associated images created:", filenames);
-
-    res.status(200).json({ newStory, newTrip });
+    res.status(200).json(newStory);
   } catch (err) {
     console.log(err);
     res.status(400).json(err);
@@ -67,7 +57,7 @@ router.delete("/:id", withAuth, async (req, res) => {
       return;
     }
 
-    const imageFilename = storyData.image;
+    const imageFilename = storyData.images;
 
     await Story.destroy({
       where: {
