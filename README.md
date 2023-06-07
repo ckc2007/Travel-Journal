@@ -44,6 +44,8 @@ A travel journal app that saves your favorite travel memories. Add points of int
 
 ![video](./assets/images/)
 
+[Link to the deployed Heroku App](https://travel-journal.herokuapp.com/)
+
 ## Contributing
 
 This project was built in collaboration with:
