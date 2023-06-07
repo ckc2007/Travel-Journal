@@ -57,6 +57,10 @@ Third party assets used in this project include:
 
 - [Sequelize](https://www.npmjs.com/package/sequelize)
 - [Multer](https://www.npmjs.com/package/multer)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Glide.js](https://glidejs.com/)
+- [Feather Icons](https://feathericons.com/)
+- [Google Fonts](https://fonts.google.com/)
 
 Tutorials used in this project include:
 
@@ -65,10 +69,6 @@ Tutorials used in this project include:
 ## License
 
 This project is licensed under the MIT license.
-
-## Features
-
-user login, commenting, multiple picture uploads, modern css style.
 
 ## Tests
 
