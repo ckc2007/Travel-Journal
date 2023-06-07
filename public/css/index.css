@@ -34,3 +34,16 @@ img {
       width: 200px;
       height: 250px;
 }
+
+.slideshow .card {
+      width: 24%;
+      height: 300px;
+    }
+    .slideshow .card .overlay-text{
+      bottom: 20px;
+    }
+    .slideshow .card img{
+      object-fit: cover;
+      width: 100%;
+      filter: brightness(50%);
+    }
